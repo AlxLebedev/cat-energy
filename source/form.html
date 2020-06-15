@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Energy arder-form page</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="logo header__logo">
+        <picture class="logo__container">
+          <source media="(min-width: )" srcset="">
+          <source media="(min-width: )" srcset="">
+          <img src="http://placehold.it/150x100" alt="Cat Energy Logo" class="logo__image">
+        </picture>
+      </a>
+      <nav class="navigation header__navigation">
+        <button class="navigation__toggle-button" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link navigation__link--active" href="#">Главная</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="#">Каталог продукции</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="order-form">
+    <div class="order-form__wrapper">
+      <h1 class="order-form__title">Подбор программы</h1>
+      <p class="order-form__comment">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="order-form__container" action="https://echo.htmlacademy.ru" name="order-form">
+        <fieldset class="cat-data order-form__field">
+          <legend class="visually-hidden">Данные о Вашем питомце</legend>
+          <ul class="cat-data__list">
+            <li class="cat-data__item">
+              <label class="cat-data__label required" for="cat-data__name">Имя:</label>
+              <input class="cat-data__name" type="text" name="cat-name" id="cat-data__name" placeholder="Барсик" required>
+            </li>
+            <li class="cat-data__item">
+              <label class="cat-data__label required" for="cat-data__weight">Вес (кг):</label>
+              <input class="cat-data__weight" type="number" name="cat-weight" id="cat-data__weight" value="7" required>
+            </li>
+            <li class="cat-data__item">
+              <label class="cat-data__label" for="cat-data__age">Возраст (лет):</label>
+              <input class="cat-data__age" type="number" name="cat-age" id="cat-data__age" value="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="programm-data order-form__field">
+          <legend class="visually-hidden">Программа питания</legend>
+          <ul class="programm-data__list">
+            <li class="programm-data__item">
+              <input class="programm-data__slim" type="radio" name="programm-data-slim" id="programm-data__slim" value="programm-slim" checked>
+              <label class="programm-data__lable" for="programm-data__slim">Похудение</label>
+            </li>
+            <li class="programm-data__item">
+              <input class="programm-data__pro" type="radio" name="programm-data-pro" id="programm-data__pro" value="programm-pro">
+              <label class="programm-data__lable" for="programm-data__pro">Набор массы</label>
+            </li>
+            <li class="programm-data__item">
+              <input class="programm-data__advice" type="radio" name="programm-data-advice" id="programm-data__advice" value="programm-advice">
+              <label class="programm-data__lable" for="programm-data__advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="cat-owner-data order-form__field">
+          <legend class="cat-owner-data__title">Контактные данные (владельца кота)</legend>
+          <ul class="cat-owner-data__list">
+            <li class="cat-owner-data__item">
+              <label class="cat-owner-data__lable required" for="cat-owner-data__email">E-mail:</label>
+              <input class="cat-owner-data__email" type="email" name="owner-email" id="cat-owner-data__email" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li class="cat-owner-data__item">
+              <label class="cat-owner-data__lable required" for="cat-owner-data__tel">Телефон:</label>
+              <input class="cat-owner-data__tel" type="tel" name="owner-tel" id="cat-owner-data__tel" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="comment-data order-form__field">
+          <legend class="comment-data__title">Комментарий</legend>
+          <label for="comment-data__message" class="visually-hidden">Комментарий</label>
+          <textarea class="comment-data__message" name="comment-message" id="comment-data__message" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="additions order-form__field">
+          <legend class="additions__title">Дополнительно</legend>
+          <ul class="additions__list">
+            <li class="additions__item">
+              <input class="additions__sweetener" type="checkbox" name="sweetener" id="additions__sweetener" value="sweetener" checked>
+              <label class="additions__lable" for="additions__sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="additions__item">
+              <input class="additions__water" type="checkbox" name="water" id="additions__water" value="water">
+              <label class="additions__lable" for="additions__water">Питьевая вода</label>
+            </li>
+            <li class="additions__item">
+              <input class="additions__milk" type="checkbox" name="milk" id="additions__milk" value="milk">
+              <label class="additions__lable" for="additions__milk">Молоко</label>
+            </li>
+            <li class="additions__item">
+              <input class="additions__vitamins" type="checkbox" name="vitamins" id="additions__vitamins" value="vitamins">
+              <label class="additions__lable" for="additions__vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="order-form__button-container">
+          <button class="button order-form__button" type="submit">Отправить заявку</button>
+          <p class="order-form__hint"><sup>*</sup> - Обязательные поля</p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <section class="contacts footer__contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__wrapper">
+        <div class="contacts__content">
+          <p class="contacts__appeal">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+        <iframe class="contacts__map" src="#" frameborder="0"></iframe>
+      </div>
+    </section>
+    <div class="footer__wrapper">
+      <section class="footer__logo">
+        <h2 class="visually-hidden">Логотип Cat Energy</h2>
+        <a class="footer__logo-link" href="">
+          <img class="footer__logo-image" src="http://placehold.it/150x100" alt="Cat Energy Logo">
+        </a>
+      </section>
+      <section class="social footer__social">
+        <h2 class="visually-hidden">Социальный сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+              <img class="social__image" src="#" alt="VK icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagramm" href="#">
+              <span class="visually-hidden">Инстаграмм</span>
+              <img class="social__image" src="#" alt="instagramm icon">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <img class="social__image" src="#" alt="facebook icon">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright footer__copyright">
+        <h2 class="visually-hidden">Copyright</h2>
+        <span class="copyright__name">HTML Academy</span>
+        <img class="copyright__image" src="http://placehold.it/150x100" alt="HTML Academy logo">
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
