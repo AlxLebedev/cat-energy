@@ -1,0 +1,64 @@
+.header__wrapper {
+  position: relative;
+  padding: 12px 20px 12px 20px;
+}
+
+.header__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 52px);
+  width: 101px;
+  height: 18px;
+  background-image: url("../img/logo-mobile-header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation__toggle-button {
+  position: absolute;
+  top: 24px;
+  left: 85%;
+  width: 24px;
+  height: 18px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation__toggle-button--menu-open {
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.navigation__toggle-button--menu-close {
+  background-image: url("../img/icon-close.svg");
+}
+
+.navigation__list {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.navigation__list--closed {
+  @include visually-hidden
+}
+
+.navigation__list-item {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #000000;
+}
+
+.navigation__list-item:first-child {
+  border-top: 1px solid #000000;
+}
+
+.navigation__link {
+  color: #000000;
+  text-decoration: none;
+}
