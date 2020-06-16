@@ -37,96 +37,96 @@
     <div class="form-page__wrapper">
       <h1 class="form-page__title">Подбор программы</h1>
       <p class="form-page__comment">Заполните анкету и&nbsp;мы&nbsp;подберем программу питания для вашего кота</p>
-      <form class="order-form" action="https://echo.htmlacademy.ru" name="order-form" method="POST">
-        <fieldset class="order-form__field">
-          <legend class="order-form__legend order-form__legend--display-hidden">Данные о&nbsp;Вашем питомце</legend>
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <label class="order-form__label">
-                Имя: <sup>*</sup><input class="order-form__text-input" type="text" name="cat-name" placeholder="Барсик" required>
+      <form class="form" action="https://echo.htmlacademy.ru" name="form" method="POST">
+        <fieldset class="form__field">
+          <legend class="form__legend form__legend--display-hidden">Данные о&nbsp;Вашем питомце</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label">
+                Имя: <sup>*</sup><input class="text-input form__text-input" type="text" name="cat-name" placeholder="Барсик" required>
               </label>
             </li>
-            <li class="order-form__item">
-              <label class="order-form__label">
-                Вес (кг): <sup>*</sup><input class="order-form__text-input" type="number" name="cat-weight" placeholder="7" required>
+            <li class="form__item">
+              <label class="form__label">
+                Вес (кг): <sup>*</sup><input class="text-input form__text-input" type="number" name="cat-weight" placeholder="7" required>
               </label>
             </li>
-            <li class="order-form__item">
-              <label class="order-form__label">
-                Возраст (лет): <input class="order-form__text-input" type="number" name="cat-age" placeholder="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="order-form__field">
-          <legend class="order-form__legend order-form__legend--display-hidden">Программа питания</legend>
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__radio-input" type="radio" name="nutrition-programm"value="programm-slim" checked> Похудение
-              </label>
-            </li>
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__radio-input" type="radio" name="nutrition-programm" value="programm-pro"> Набор массы
-              </label>
-            </li>
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__radio-input" type="radio" name="nutrition-programm" value="programm-advice"> Не&nbsp;знаю (нужен ваш совет)
+            <li class="form__item">
+              <label class="form__label">
+                Возраст (лет): <input class="text-input form__text-input" type="number" name="cat-age" placeholder="7">
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__field">
-          <legend class="order-form__title">Контактные данные (владельца кота)</legend>
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                E-mail: <sup>*</sup><input class="order-form__text-input order-form__text-input--type-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+        <fieldset class="form__field">
+          <legend class="form__legend form__legend--display-hidden">Программа питания</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="radio-input form__radio-input" type="radio" name="nutrition-programm" value="programm-slim" checked> Похудение
               </label>
             </li>
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                Телефон: <sup>*</sup><input class="order-form__text-input order-form__text-input--type-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="radio-input form__radio-input" type="radio" name="nutrition-programm" value="programm-pro"> Набор массы
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="radio-input form__radio-input" type="radio" name="nutrition-programm" value="programm-advice"> Не&nbsp;знаю (нужен ваш совет)
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__field">
-          <legend class="order-form__title">Комментарий</legend>
-          <label class="order-form__lable">
-            <textarea class="order-form__textarea" name="comment-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="form__field">
+          <legend class="form__title">Контактные данные (владельца кота)</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__lable">
+                E-mail: <sup>*</sup><input class="text-input form__text-input form__text-input--type-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__lable">
+                Телефон: <sup>*</sup><input class="text-input form__text-input form__text-input--type-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__field">
+          <legend class="form__title">Комментарий</legend>
+          <label class="form__lable">
+            <textarea class="form__textarea" name="comment-message" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
-        <fieldset class="order-form__field">
-          <legend class="order-form__title">Дополнительно</legend>
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__checkbox-input" type="checkbox" name="additional[]" value="sweetener" checked> Сахарозаменитель
+        <fieldset class="form__field">
+          <legend class="form__title">Дополнительно</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="checkbox-input form__checkbox-input" type="checkbox" name="additional[]" value="sweetener" checked> Сахарозаменитель
               </label>
             </li>
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__checkbox-input" type="checkbox" name="additional[]" value="water"> Питьевая вода
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="checkbox-input form__checkbox-input" type="checkbox" name="additional[]" value="water"> Питьевая вода
               </label>
             </li>
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__checkbox-input" type="checkbox" name="additional[]" value="milk"> Молоко
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="checkbox-input form__checkbox-input" type="checkbox" name="additional[]" value="milk"> Молоко
               </label>
             </li>
-            <li class="order-form__item">
-              <label class="order-form__lable">
-                <input class="order-form__checkbox-input" type="checkbox" name="additional[]" value="vitamins"> Витамины
+            <li class="form__item">
+              <label class="form__lable">
+                <input class="checkbox-input form__checkbox-input" type="checkbox" name="additional[]" value="vitamins"> Витамины
               </label>
             </li>
           </ul>
         </fieldset>
-        <div class="order-form__button-container">
-          <button class="button order-form__button" type="submit">Отправить заявку</button>
-          <p class="order-form__hint"><sup>*</sup> &mdash;&nbsp;Обязательные поля</p>
+        <div class="form__button-container">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <p class="form__hint"><sup>*</sup> &mdash;&nbsp;Обязательные поля</p>
         </div>
       </form>
     </div>
