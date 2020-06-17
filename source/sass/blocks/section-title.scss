@@ -1,6 +1,9 @@
 .section-title {
   @include header-styles-reset;
   color: $font-color-black;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 33px;
 }
 
 .section-title--display-hidden {
