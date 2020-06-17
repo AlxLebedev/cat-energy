@@ -18,7 +18,7 @@
 .navigation__toggle-button {
   position: absolute;
   top: 24px;
-  left: 85%;
+  left: calc(100% - 45px);
   width: 24px;
   height: 18px;
   background-color: transparent;
