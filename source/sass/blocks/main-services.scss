@@ -40,6 +40,7 @@
 
 .services__item-title {
   @include header-styles-reset;
+  font-family: 'Oswald';
   margin-left: 72px;
   color: $font-color-black;
   text-transform: uppercase;
@@ -55,6 +56,7 @@
 
 .services__item-link {
   position: relative;
+  font-family: 'Oswald';
   color: $font-color-black;
   text-transform: uppercase;
   text-decoration: none;
