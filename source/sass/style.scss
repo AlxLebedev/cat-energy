@@ -1,8 +1,14 @@
 @import "./global-styles/fonts.scss";
 @import "./global-styles/body-styles.scss";
 
+@import "./variables/colors.scss";
+
 @import "./mixins/visually-hidden.scss";
-@import "./mixins/button-styles.scss";
+@import "./mixins/common-button-styles.scss";
+
+@import "./mixins/resets/list-styles-reset.scss";
+@import "./mixins/resets/header-styles-reset.scss";
 
 @import "./blocks/header.scss";
 @import "./blocks/main-offer.scss";
+@import "./blocks/main-services.scss";

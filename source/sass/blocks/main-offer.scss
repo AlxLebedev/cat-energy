@@ -55,3 +55,12 @@
   max-width: 280px;
   background-color: #68b737;
 }
+
+.offer__button:hover {
+  background-color: #5eaa2f;
+}
+
+.offer__button:active {
+  color: #8cc26a;
+  border: none;
+}
