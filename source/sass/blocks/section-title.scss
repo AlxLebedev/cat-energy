@@ -1,0 +1,8 @@
+.section-title {
+  @include header-styles-reset;
+  color: $font-color-black;
+}
+
+.section-title--display-hidden {
+  @include visually-hidden;
+}

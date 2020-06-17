@@ -2,10 +2,6 @@
   padding: 0 20px 0 20px;
 }
 
-.services__title--display-hidden {
-  @include visually-hidden
-}
-
 .services__list {
   @include list-styles-reset
 }
