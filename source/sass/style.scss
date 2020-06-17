@@ -1,5 +1,8 @@
 @import "./global-styles/fonts.scss";
 @import "./global-styles/body-styles.scss";
+
 @import "./mixins/visually-hidden.scss";
+@import "./mixins/button-styles.scss";
 
 @import "./blocks/header.scss";
+@import "./blocks/main-offer.scss";

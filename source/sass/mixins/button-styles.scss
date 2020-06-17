@@ -1,0 +1,10 @@
+@mixin common-button-styles {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
