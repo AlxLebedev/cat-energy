@@ -1,0 +1,62 @@
+.real-case {
+  background-color: #f2f2f2;
+}
+
+.real-case__text-content {
+  padding: 16px 20px 16px 20px;
+}
+
+.real-case__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.real-case__indicators {
+  @include list-styles-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  margin-bottom: 38px;
+}
+
+.real-case__indicators-group {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+}
+
+.real-case__indicator-title {
+  position: absolute;
+  top: 47px;
+  left: calc(50% - 43px);
+  box-sizing: border-box;
+  width: 87px;
+  font-size: 12px;
+  line-height: 12px;
+  margin: auto;
+  text-align: center;
+  padding: 3px 16px 3px 16px;
+  background-color: #f2f2f2;
+}
+
+.real-case__indicator-value {
+  font-family: "Oswald";
+  color: $font-color-black;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.real-case__expenses {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 38px;
+}
