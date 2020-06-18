@@ -1,0 +1,27 @@
+.footer__wrapper {
+  padding: 38px 20px 22px 20px;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo-link {
+  margin: auto;
+  width: 128px;
+  height: 24px;
+}
+
+.footer__social {
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
