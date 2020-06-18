@@ -6,6 +6,7 @@
 @import "./mixins/visually-hidden.scss";
 @import "./mixins/resets/button-styles-reset.scss";
 @import "./mixins/top-line.scss";
+@import "./mixins/top-line--dark.scss";
 @import "./mixins/button-styles-design.scss";
 
 @import "./mixins/resets/list-styles-reset.scss";
@@ -13,8 +14,9 @@
 
 @import "./blocks/section-title.scss";
 @import "./blocks/button.scss";
+@import "./blocks/title-with-rows.scss";
 
-// index-mobile
+// index-page-mobile
 
 @import "./blocks/header.scss";
 @import "./blocks/main-offer.scss";
@@ -26,8 +28,11 @@
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 
-//catalog-mobile
+// catalog-page-mobile
 @import "./blocks/catalog.scss";
 @import "./blocks/product.scss";
 @import "./blocks/basic-goods.scss";
 @import "./blocks/suggestion-more.scss";
+@import "./blocks/additional-goods.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/promo.scss";

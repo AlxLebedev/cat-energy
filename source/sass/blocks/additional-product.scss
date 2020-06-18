@@ -1,0 +1,39 @@
+.additional-product {
+  @include top-line--dark;
+  padding-top: 13px;
+  padding-bottom: 17px;
+}
+
+.additional-product__title {
+  @include list-styles-reset;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-product__properties {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 15px;
+  margin-bottom: 14px;
+}
+
+.additional-product__price {
+  text-transform: uppercase;
+}
+
+.additional-product__order-button {
+  @include button-styles-reset;
+  @include button-styles-design;
+}
+
+.additional-product__order-button:hover {
+  background-color: #5eaa2f;
+}
+
+.additional-product__order-button:active {
+  color: #8cc26a;
+}

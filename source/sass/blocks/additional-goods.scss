@@ -1,0 +1,10 @@
+.additional-goods {
+  position: relative;
+  @include top-line;
+}
+
+.additional-goods__list {
+  @include list-styles-reset;
+  padding-left: 20px;
+  padding-right: 20px;
+}
