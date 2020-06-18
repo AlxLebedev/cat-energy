@@ -31,7 +31,7 @@
 }
 
 .slider__button {
-  @include common-button-styles;
+  @include button-styles-reset;
 }
 
 .slider__tumbler-container {

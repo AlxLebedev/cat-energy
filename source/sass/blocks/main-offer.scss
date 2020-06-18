@@ -42,15 +42,8 @@
 }
 
 .offer__button {
-  @include common-button-styles;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  margin: auto;
-  padding: 11px 10px 11px 10px;
-  width: 100%;
-  max-width: 280px;
-  background-color: #68b737;
+  @include button-styles-reset;
+  @include button-styles-design;
 }
 
 .offer__button:hover {
@@ -59,5 +52,4 @@
 
 .offer__button:active {
   color: #8cc26a;
-  border: none;
 }
