@@ -4,12 +4,14 @@
 
 .conception__list {
   @include list-styles-reset;
+  max-width: 350px;
+  margin: auto;
 }
 
 .conception__item {
   font-size: 14px;
   position: relative;
-  padding-left: 80px;
+  padding: 6px 0 6px 80px;
   margin-bottom: 32px;
   max-width: 202px;
 }
@@ -21,7 +23,7 @@
 .conception__item::before {
   position: absolute;
   content: "";
-  top: 2px;
+  top: 0;
   left: 0;
   width: 60px;
   height: 60px;
