@@ -5,11 +5,14 @@
 
 @import "./mixins/visually-hidden.scss";
 @import "./mixins/common-button-styles.scss";
+@import "./mixins/top-line.scss";
 
 @import "./mixins/resets/list-styles-reset.scss";
-@import "./mixins/resets/header-styles-reset.scss";
+@import "./mixins/resets/heading-styles-reset.scss";
 
 @import "./blocks/section-title.scss";
+
+// index-mobile
 
 @import "./blocks/header.scss";
 @import "./blocks/main-offer.scss";
@@ -20,3 +23,8 @@
 @import "./blocks/footer.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
+
+//catalog-mobile
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/basic-goods.scss";

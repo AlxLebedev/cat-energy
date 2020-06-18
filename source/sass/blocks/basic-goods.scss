@@ -1,0 +1,8 @@
+.basic-goods__list {
+  @include list-styles-reset;
+}
+
+.basic-goods__item {
+  @include top-line;
+  padding: 25px 20px 25px 20px;
+}

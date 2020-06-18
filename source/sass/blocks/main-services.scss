@@ -39,7 +39,7 @@
 }
 
 .services__item-title {
-  @include header-styles-reset;
+  @include heading-styles-reset;
   font-family: 'Oswald';
   margin-left: 72px;
   color: $font-color-black;
