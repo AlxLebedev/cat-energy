@@ -45,8 +45,14 @@
   list-style-type: none;
 }
 
-.navigation__list--closed {
-  @include visually-hidden
+@media (max-width: 767px) {
+  .navigation__list--closed {
+    display: none;
+  }
+}
+
+.navigation__list--noJS {
+  display: block;
 }
 
 .navigation__list-item {
