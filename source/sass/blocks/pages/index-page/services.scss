@@ -44,7 +44,10 @@
 
 .services__item-title {
   @include heading-styles-reset;
-  font-family: 'Oswald';
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
   margin-left: 72px;
   color: $font-color-black;
   text-transform: uppercase;
@@ -52,9 +55,7 @@
 
 .services__item-description {
   margin: 0 0 20px 0;
-  padding: 39px 39px 24px 0;
-  font-size: 14px;
-  line-height: 18px;
+  padding: 39px 20px 24px 0;
   border-bottom: 1px solid #dadada;
 }
 
@@ -62,6 +63,8 @@
   position: relative;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   color: $font-color-black;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
 }
