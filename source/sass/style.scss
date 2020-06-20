@@ -13,33 +13,32 @@
 @import "./mixins/top-line--dark.scss";
 @import "./mixins/button-styles-design.scss";
 @import "./mixins/heading-large.scss";
-
 @import "./mixins/resets/list-styles-reset.scss";
 @import "./mixins/resets/heading-styles-reset.scss";
 
 // common style blocks
 
-@import "./blocks/button.scss";
-@import "./blocks/title-with-rows.scss";
+@import "./blocks/common/button.scss";
+@import "./blocks/common/title-with-rows.scss";
 
 // index-page
 
-@import "./blocks/header.scss";
-@import "./blocks/offer.scss";
-@import "./blocks/services.scss";
-@import "./blocks/conception.scss";
-@import "./blocks/real-case.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/social.scss";
+@import "./blocks/common/header/header.scss";
+@import "./blocks/pages/index-page/offer.scss";
+@import "./blocks/pages/index-page/services.scss";
+@import "./blocks/pages/index-page/conception.scss";
+@import "./blocks/pages/index-page/real-case.scss";
+@import "./blocks/pages/index-page/slider.scss";
+@import "./blocks/common/footer/footer.scss";
+@import "./blocks/common/footer/contacts.scss";
+@import "./blocks/common/footer/social.scss";
 
 // catalog-page
 
-@import "./blocks/catalog.scss";
-@import "./blocks/product.scss";
-@import "./blocks/basic-goods.scss";
-@import "./blocks/suggestion-more.scss";
-@import "./blocks/additional-goods.scss";
-@import "./blocks/additional-product.scss";
-@import "./blocks/promo.scss";
+@import "./blocks/pages/catalog-page/catalog.scss";
+@import "./blocks/pages/catalog-page/product.scss";
+@import "./blocks/pages/catalog-page/basic-goods.scss";
+@import "./blocks/pages/catalog-page/suggestion-more.scss";
+@import "./blocks/pages/catalog-page/additional-goods.scss";
+@import "./blocks/pages/catalog-page/additional-product.scss";
+@import "./blocks/pages/catalog-page/promo.scss";
