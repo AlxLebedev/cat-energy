@@ -1,3 +1,7 @@
+.basic-goods__title {
+  @include visually-hidden;
+}
+
 .basic-goods__list {
   @include list-styles-reset;
 }

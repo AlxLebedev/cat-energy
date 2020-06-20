@@ -6,6 +6,12 @@
   padding: 16px 20px 16px 20px;
 }
 
+.real-case__title {
+  @include heading-styles-reset;
+  @include heading-large;
+  margin-bottom: 33px;
+}
+
 .real-case__description {
   margin: 0;
   font-size: 14px;

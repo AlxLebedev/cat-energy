@@ -2,6 +2,12 @@
   padding: 32px 20px 47px 20px;
 }
 
+.conception__title {
+  @include heading-styles-reset;
+  @include heading-large;
+  margin-bottom: 33px;
+}
+
 .conception__list {
   @include list-styles-reset;
   max-width: 350px;

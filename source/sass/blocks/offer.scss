@@ -20,6 +20,10 @@
   padding: 29px 20px 22px 20px;
 }
 
+.offer__title {
+  @include visually-hidden;
+}
+
 .offer__slogan-title {
   margin: 0;
   font-size: 36px;
