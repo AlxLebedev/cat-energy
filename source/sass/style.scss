@@ -1,7 +1,11 @@
 @import "./global-styles/fonts.scss";
 @import "./global-styles/body-styles.scss";
 
+// variables
+
 @import "./variables/colors.scss";
+
+// mixins
 
 @import "./mixins/visually-hidden.scss";
 @import "./mixins/resets/button-styles-reset.scss";
@@ -13,10 +17,12 @@
 @import "./mixins/resets/list-styles-reset.scss";
 @import "./mixins/resets/heading-styles-reset.scss";
 
+// common style blocks
+
 @import "./blocks/button.scss";
 @import "./blocks/title-with-rows.scss";
 
-// index-page-mobile
+// index-page
 
 @import "./blocks/header.scss";
 @import "./blocks/offer.scss";
@@ -28,7 +34,8 @@
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
 
-// catalog-page-mobile
+// catalog-page
+
 @import "./blocks/catalog.scss";
 @import "./blocks/product.scss";
 @import "./blocks/basic-goods.scss";
