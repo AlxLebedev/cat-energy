@@ -1,0 +1,37 @@
+.keyboard-input {
+  display: flex;
+  align-items: center;
+}
+
+.keyboard-input input::placeholder {
+  color:$font-color-black;
+  opacity: 1;
+}
+
+.keyboard-input__field {
+  font: inherit;
+  text-transform: uppercase;
+  width: 100px;
+  flex-grow: 1;
+  margin-left: 15px;
+  border: 1px solid #e6e6e6;
+  padding: 7px 15px;
+}
+
+.keyboard-input__field:hover {
+  border-color: #cdcdcd;
+}
+
+.keyboard-input__field--type-email {
+  background-image: url("../../../img/icon-mail.svg");
+  background-size: 17px 13px;
+  background-repeat: no-repeat;
+  background-position: left calc(100% - 20px) bottom 50%;
+}
+
+.keyboard-input__field--type-tel {
+  background-image: url("../../../img/icon-phone.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left calc(100% - 15px) bottom 50%;
+}

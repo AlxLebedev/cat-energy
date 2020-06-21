@@ -1,6 +1,8 @@
 .form-page__wrapper {
   @include top-line;
   color: $font-color-black;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
 
 .form-page__title {
@@ -11,20 +13,9 @@
 }
 
 .form-page__comment {
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 20px;
   margin-top: 0;
-}
-
-.form__field {
-  position: relative;
-  border: none;
-}
-
-.form__legend--display-hidden {
-  @include visually-hidden;
 }
