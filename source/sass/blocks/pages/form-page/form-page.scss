@@ -19,3 +19,12 @@
   padding-left: 20px;
   margin-top: 0;
 }
+
+.form__field {
+  position: relative;
+  border: none;
+}
+
+.form__legend--display-hidden {
+  @include visually-hidden;
+}
