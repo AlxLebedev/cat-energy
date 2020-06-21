@@ -1,0 +1,21 @@
+.form-page__wrapper {
+  @include top-line;
+  color: $font-color-black;
+}
+
+.form-page__title {
+  @include heading-styles-reset;
+  @include heading-large;
+  padding: 21px 0 24px 0;
+  padding-left: 20px;
+}
+
+.form-page__comment {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  margin-top: 0;
+}
