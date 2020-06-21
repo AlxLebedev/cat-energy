@@ -1,0 +1,20 @@
+.radio-input {
+  margin-left: 40px;
+}
+
+.radio-input::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #cdcdcd;
+}
+
+.radio-input__field {
+  @include visually-hidden;
+}
