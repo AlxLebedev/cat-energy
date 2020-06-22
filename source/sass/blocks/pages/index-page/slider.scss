@@ -35,6 +35,16 @@
 
 .slider__button {
   @include button-styles-reset;
+  padding: 0;
+  border-bottom: 1px dashed #ececec;
+}
+
+.slider__button:hover {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.slider__button:active {
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .slider__tumbler-container {
