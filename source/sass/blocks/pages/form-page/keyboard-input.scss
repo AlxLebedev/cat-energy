@@ -22,6 +22,10 @@
   border-color: #cdcdcd;
 }
 
+.keyboard-input__field:active {
+  border-color: #828282;
+}
+
 .keyboard-input__field--type-email {
   background-image: url("../../../img/icon-mail.svg");
   background-size: 17px 13px;
