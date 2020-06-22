@@ -1,8 +1,15 @@
-.radio-input {
-  margin-left: 40px;
+.radio-input__field {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
-.radio-input::before {
+.radio-input__text {
+  margin-left: 40px;
+  user-select: none;
+}
+
+.radio-input__text::before {
   position: absolute;
   content: "";
   top: 0;
@@ -12,9 +19,21 @@
   height: 28px;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px #cdcdcd;
+  box-shadow: 0 0 0 1px #e6e6e6;
 }
 
-.radio-input__field {
-  @include visually-hidden;
+.radio-input__field:not(:disabled):not(:checked) + .radio-input__text:hover::before {
+  box-shadow: 0 0 0 1px #dadada;
+}
+
+.radio-input__field:not(:disabled):active + .radio-input__text {
+  opacity: 0.6;
+}
+
+.radio-input__field:not(:disabled):active + .radio-input__text::before {
+  opacity: 0.6;
+}
+
+.radio-input__field:checked + .radio-input__text::before {
+  background-color: #68b738;
 }
