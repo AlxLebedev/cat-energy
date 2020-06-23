@@ -19,11 +19,11 @@
   height: 28px;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px #e6e6e6;
+  box-shadow: 0 0 0 1px $gray-middle;
 }
 
 .radio__input:not(:disabled):not(:checked) + .radio__text:hover::before {
-  box-shadow: 0 0 0 1px #dadada;
+  box-shadow: 0 0 0 1px $gray-dark;
 }
 
 .radio__input:not(:disabled):active + .radio__text {
@@ -35,5 +35,5 @@
 }
 
 .radio__input:checked + .radio__text::before {
-  background-color: #68b738;
+  background-color: $green-deafault;
 }

@@ -1,5 +1,5 @@
 .real-case {
-  background-color: #f2f2f2;
+  background-color: $gray-default;
 }
 
 .real-case__text-content {
@@ -30,7 +30,7 @@
   flex-direction: column-reverse;
   width: 124px;
   height: 56px;
-  border: 1px solid #bababa;
+  border: 1px solid $gray-dark;
   border-radius: 5px;
 }
 
@@ -45,7 +45,7 @@
   margin: auto;
   text-align: center;
   padding: 3px 16px 3px 16px;
-  background-color: #f2f2f2;
+  background-color: $gray-default;
 }
 
 .real-case__indicator-value {

@@ -17,11 +17,11 @@
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  border: 1px solid $gray-middle;
 }
 
 .checkbox__input:not(:disabled):not(:checked) + .checkbox__text:hover::before {
-  border: 1px solid #e8e8e8;
+  border: 1px solid $gray-dark;
 }
 
 .checkbox__input:not(:disabled):active + .checkbox__text {

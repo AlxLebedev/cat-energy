@@ -39,15 +39,14 @@
   @include button-styles-design;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $font-color-gray;
+  background-color: $gray-default;
 }
 
 .suggestion-more__button:hover {
-  background-color: #ebebeb;
+  background-color: $gray-light;
 }
 
 .suggestion-more__button:active {
-  color: #c4c4c4;
-  background-color: #ebebeb;
+  color: $gray-havy-dark;
 }

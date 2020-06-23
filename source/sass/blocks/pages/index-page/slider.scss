@@ -36,15 +36,15 @@
 .slider__button {
   @include button-styles-reset;
   padding: 0;
-  border-bottom: 1px dashed #ececec;
+  border-bottom: 1px dashed $gray-dark;
 }
 
 .slider__button:hover {
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid $gray-havy-dark;
 }
 
 .slider__button:active {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $gray-default;
 }
 
 .slider__tumbler-container {
@@ -52,7 +52,7 @@
   box-sizing: border-box;
   width: 85px;
   height: 14px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $gray-dark;
   border-radius: 6px;
   background-color: #ffffff;
   padding-left: 5px;
@@ -66,7 +66,7 @@
   width: 35px;
   height: 6px;
   border-radius: 5px;
-  background-color: #68b738;
+  background-color: $green-deafault;
   transition: left 1s, transform 1s;
 }
 

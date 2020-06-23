@@ -39,9 +39,9 @@
 }
 
 .product__order-button:hover {
-  background-color: #5eaa2f;
+  background-color: $green-dark;
 }
 
 .product__order-button:active {
-  color: #8cc26a;
+  color: $green-light;
 }

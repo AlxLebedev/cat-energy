@@ -14,16 +14,16 @@
   width: 100px;
   flex-grow: 1;
   margin-left: 15px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid $gray-middle;
   padding: 7px 45px 7px 15px;
 }
 
 .keyboard-input__field:hover {
-  border-color: #cdcdcd;
+  border-color: $gray-dark;
 }
 
 .keyboard-input__field:active {
-  border-color: #828282;
+  border-color: $gray-havy-dark;
 }
 
 .keyboard-input__field--type-email {
