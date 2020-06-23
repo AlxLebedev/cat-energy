@@ -31,13 +31,13 @@
 }
 
 .services__item--slimming::before {
-  background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, #68b738 25px, transparent 26px);
+  background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $green-deafault 25px, transparent 26px);
   background-size: 35px 49px, 100%;
   background-position: bottom 12px center, center;
 }
 
 .services__item--pro::before {
-  background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, #68b738 25px, transparent 26px);
+  background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $green-deafault 25px, transparent 26px);
   background-size: 67px 28px, 100%;
   background-position: center, center;
 }
@@ -83,6 +83,7 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position: left;
+  background-size: 33px 11px;
 }
 
 .services__item-link:hover::after {

@@ -17,6 +17,7 @@
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 55px 60px;
 }
 
 .promo__wrapper {
@@ -25,6 +26,10 @@
   background-color: $green-deafault;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .promo__content {
