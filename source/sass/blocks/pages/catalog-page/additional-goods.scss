@@ -6,7 +6,7 @@
 .additional-goods__title {
   @include heading-styles-reset;
   color: $font-color-black;
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-family: $oswald;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
