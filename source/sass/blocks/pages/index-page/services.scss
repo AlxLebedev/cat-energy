@@ -7,7 +7,7 @@
 }
 
 .services__list {
-  @include list-styles-reset
+  @include list-styles-reset;
 }
 
 .services__item {

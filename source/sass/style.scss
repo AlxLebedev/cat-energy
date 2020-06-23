@@ -1,6 +1,3 @@
-@import "./global-styles/fonts.scss";
-@import "./global-styles/body-styles.scss";
-
 // variables
 
 @import "./variables/colors.scss";
@@ -16,6 +13,11 @@
 @import "./mixins/heading-large.scss";
 @import "./mixins/resets/list-styles-reset.scss";
 @import "./mixins/resets/heading-styles-reset.scss";
+
+// global-styles
+
+@import "./global-styles/fonts.scss";
+@import "./global-styles/body-styles.scss";
 
 // common style blocks
 
