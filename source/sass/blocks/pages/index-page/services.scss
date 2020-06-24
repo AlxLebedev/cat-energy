@@ -83,11 +83,12 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 33px 11px;
+  background-size: 24px 11px;
 }
 
 .services__item-link:hover::after {
   background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-size: 33px 11px;
 }
 
 .services__item-link:active::after {
