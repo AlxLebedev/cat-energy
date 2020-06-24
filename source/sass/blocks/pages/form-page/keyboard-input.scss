@@ -26,6 +26,11 @@
   border-color: $gray-havy-dark;
 }
 
+.keyboard-input__field--invalid {
+  box-shadow: $red-error 0px 0px 0px 1px;
+  border: none;
+}
+
 .keyboard-input__field--type-email {
   background-image: url("../img/icon-mail.svg");
   background-size: 17px 13px;
