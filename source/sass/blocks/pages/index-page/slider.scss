@@ -71,6 +71,5 @@
 }
 
 .slider__tumbler--position-after {
-  left: 100%;
-  transform: translateX(-41px);
+  left: calc(100% - 40px);
 }
