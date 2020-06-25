@@ -12,7 +12,7 @@
 
 .services__item {
   position: relative;
-  background-color: $gray-default;
+  background-color: $color-gray-default;
   padding: 36px 20px 20px 20px;
 }
 
@@ -31,13 +31,13 @@
 }
 
 .services__item--slimming::before {
-  background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $green-deafault 25px, transparent 26px);
+  background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
   background-size: 35px 49px, 100%;
   background-position: bottom 12px center, center;
 }
 
 .services__item--pro::before {
-  background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $green-deafault 25px, transparent 26px);
+  background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
   background-size: 67px 28px, 100%;
   background-position: center, center;
 }
@@ -49,20 +49,20 @@
   font-size: 24px;
   line-height: 24px;
   margin-left: 72px;
-  color: $font-color-black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
 .services__item-description {
   margin: 0 0 20px 0;
   padding: 39px 20px 24px 0;
-  border-bottom: 1px solid $gray-middle;
+  border-bottom: 1px solid $color-gray-middle;
 }
 
 .services__item-link {
   position: relative;
   font-family: $oswald;
-  color: $font-color-black;
+  color: $color-black;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -70,7 +70,7 @@
 }
 
 .services__item-link:active {
-  color: $gray-havy-dark;
+  color: $color-gray-havy-dark;
 }
 
 .services__item-link::after {

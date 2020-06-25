@@ -18,7 +18,7 @@
 
 .suggestion-more__title {
   @include reset-styles-heading;
-  color: $font-color-black;
+  color: $color-black;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -37,14 +37,14 @@
 
 .suggestion-more__button {
   @include reset-styles-button;
-  color: $font-color-gray;
-  background-color: $gray-default;
+  color: $color-gray-darkest;
+  background-color: $color-gray-default;
 }
 
 .suggestion-more__button:hover {
-  background-color: $gray-light;
+  background-color: $color-gray-light;
 }
 
 .suggestion-more__button:active {
-  color: $gray-havy-dark;
+  color: $color-gray-havy-dark;
 }

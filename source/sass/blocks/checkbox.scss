@@ -16,12 +16,12 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
-  border: 1px solid $gray-middle;
+  background-color: $color-white;
+  border: 1px solid $color-gray-middle;
 }
 
 .checkbox__input:not(:disabled):not(:checked) + .checkbox__text:hover::before {
-  border: 1px solid $gray-dark;
+  border: 1px solid $color-gray-dark;
 }
 
 .checkbox__input:not(:disabled):active + .checkbox__text {

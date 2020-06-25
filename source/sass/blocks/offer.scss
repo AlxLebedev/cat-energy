@@ -1,6 +1,6 @@
 .offer {
   font-family: $oswald;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 305px, #ffffff 305px);
   background-size: 320px 305px, 100%;
@@ -46,9 +46,9 @@
 }
 
 .offer__button:hover {
-  background-color: $green-dark;
+  background-color: $color-green-dark;
 }
 
 .offer__button:active {
-  color: $green-light;
+  color: $color-green-light;
 }

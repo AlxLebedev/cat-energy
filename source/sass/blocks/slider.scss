@@ -36,20 +36,20 @@
 .slider__button {
   @include reset-styles-button;
   padding: 0;
-  border-bottom: 1px dashed $gray-dark;
+  border-bottom: 1px dashed $color-gray-dark;
   font-size: 14px;
   line-height: 18px;
-  color: $font-color-gray;
+  color: $color-gray-darkest;
   width: fit-content;
   background-color: transparent;
 }
 
 .slider__button:hover {
-  border-bottom: 1px solid $gray-havy-dark;
+  border-bottom: 1px solid $color-gray-havy-dark;
 }
 
 .slider__button:active {
-  border-bottom: 1px solid $gray-default;
+  border-bottom: 1px solid $color-gray-default;
 }
 
 .slider__tumbler-container {
@@ -57,9 +57,9 @@
   box-sizing: border-box;
   width: 85px;
   height: 14px;
-  border: 1px solid $gray-dark;
+  border: 1px solid $color-gray-dark;
   border-radius: 6px;
-  background-color: #ffffff;
+  background-color: $color-white;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -71,7 +71,7 @@
   width: 35px;
   height: 6px;
   border-radius: 5px;
-  background-color: $green-deafault;
+  background-color: $color-green-deafault;
   transition: left 1s, transform 1s;
 }
 

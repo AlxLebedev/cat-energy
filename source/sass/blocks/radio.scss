@@ -17,13 +17,13 @@
   box-sizing: border-box;
   width: 28px;
   height: 28px;
-  border: 8px solid #ffffff;
+  border: 8px solid $color-white;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px $gray-middle;
+  box-shadow: 0 0 0 1px $color-gray-middle;
 }
 
 .radio__input:not(:disabled):not(:checked) + .radio__text:hover::before {
-  box-shadow: 0 0 0 1px $gray-dark;
+  box-shadow: 0 0 0 1px $color-gray-dark;
 }
 
 .radio__input:not(:disabled):active + .radio__text {
@@ -35,5 +35,5 @@
 }
 
 .radio__input:checked + .radio__text::before {
-  background-color: $green-deafault;
+  background-color: $color-green-deafault;
 }

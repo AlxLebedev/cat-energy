@@ -6,7 +6,7 @@
 
 .product__title {
   @include reset-styles-heading;
-  color: $font-color-black;
+  color: $color-black;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -36,9 +36,9 @@
 }
 
 .product__order-button:hover {
-  background-color: $green-dark;
+  background-color: $color-green-dark;
 }
 
 .product__order-button:active {
-  color: $green-light;
+  color: $color-green-light;
 }

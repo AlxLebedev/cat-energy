@@ -20,7 +20,7 @@
   width: fit-content;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .form__fieldset-title::before {
@@ -30,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: $green-deafault;
+  background-color: $color-green-deafault;
   z-index: -1;
 }
 
@@ -54,8 +54,8 @@
 }
 
 .form__list--border-on {
-  border-top: 1px solid $gray-light;
-  border-bottom: 1px solid $gray-light;
+  border-top: 1px solid $color-gray-light;
+  border-bottom: 1px solid $color-gray-light;
 }
 
 .form__item {
@@ -73,11 +73,11 @@
 }
 
 .form__button:hover {
-  background-color: $green-dark;
+  background-color: $color-green-dark;
 }
 
 .form__button:active {
-  color: $green-light;
+  color: $color-green-light;
 }
 
 .form__hint {

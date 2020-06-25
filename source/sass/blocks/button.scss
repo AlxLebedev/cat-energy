@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   font-family: $oswald;
-  color: #ffffff;
+  color: $color-white;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -13,6 +13,6 @@
   padding: 11px 10px 11px 10px;
   width: 100%;
   max-width: 280px;
-  background-color: $green-deafault;
+  background-color: $color-green-deafault;
   cursor: pointer;
 }

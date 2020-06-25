@@ -4,7 +4,7 @@
   width: 280px;
   margin: auto;
   padding-top: 39px;
-  border-top: 1px solid $gray-middle;
+  border-top: 1px solid $color-gray-middle;
 }
 
 .promo::before {
@@ -23,7 +23,7 @@
 .promo__wrapper {
   padding: 190px 35px 40px 35px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-color: $green-deafault;
+  background-color: $color-green-deafault;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -36,7 +36,7 @@
   width: 165px;
   height: 56px;
   margin: auto;
-  color: #ffffff;
+  color: $color-white;
   font-size: 16px;
   line-height: 20px;
   text-align: center;

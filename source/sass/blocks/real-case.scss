@@ -1,5 +1,5 @@
 .real-case {
-  background-color: $gray-default;
+  background-color: $color-gray-default;
 }
 
 .real-case__text-content {
@@ -29,7 +29,7 @@
   flex-direction: column-reverse;
   width: 124px;
   height: 56px;
-  border: 1px solid $gray-dark;
+  border: 1px solid $color-gray-dark;
   border-radius: 5px;
 }
 
@@ -44,12 +44,12 @@
   margin: auto;
   text-align: center;
   padding: 3px 16px 3px 16px;
-  background-color: $gray-default;
+  background-color: $color-gray-default;
 }
 
 .real-case__indicator-value {
   font-family: $oswald;
-  color: $font-color-black;
+  color: $color-black;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
