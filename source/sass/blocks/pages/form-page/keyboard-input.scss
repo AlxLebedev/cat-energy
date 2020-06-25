@@ -18,6 +18,11 @@
   padding: 7px 45px 7px 15px;
 }
 
+.keyboard-input__field:invalid {
+  box-shadow: none;
+  border: 1px solid $gray-middle;
+}
+
 .keyboard-input__field:hover {
   border-color: $gray-dark;
 }
@@ -26,9 +31,8 @@
   border-color: $gray-havy-dark;
 }
 
-.keyboard-input__field--invalid {
-  box-shadow: 0 0 0 1px $red-error;
-  border: none;
+.keyboard-input > .keyboard-input__field--invalid {
+  border-color: $red-error;
 }
 
 .keyboard-input__field--type-email {
