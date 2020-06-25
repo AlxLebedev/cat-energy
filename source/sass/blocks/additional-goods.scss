@@ -1,6 +1,6 @@
 .additional-goods__wrapper {
-  @include top-line;
   position: relative;
+  border-top: 1px solid $gray-middle;
 }
 
 .additional-goods__title {

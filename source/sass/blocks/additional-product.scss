@@ -1,5 +1,5 @@
 .additional-product {
-  @include top-line--dark;
+  border-top: 1px solid $gray-dark;
   padding-top: 13px;
   padding-bottom: 17px;
 }

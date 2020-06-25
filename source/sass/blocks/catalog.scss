@@ -1,5 +1,5 @@
 .catalog__wrapper {
-  @include top-line;
+  border-top: 1px solid $gray-middle;
   padding: 0 0 35px 0;
 }
 

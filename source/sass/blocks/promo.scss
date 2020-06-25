@@ -1,10 +1,10 @@
 .promo {
-  @include top-line--dark;
   position: relative;
   box-sizing: border-box;
   width: 280px;
   margin: auto;
   padding-top: 39px;
+  border-top: 1px solid $gray-middle;
 }
 
 .promo::before {

@@ -1,5 +1,5 @@
 .form-page__wrapper {
-  @include top-line;
+  border-top: 1px solid $gray-middle;
   color: $font-color-black;
   font-family: $oswald;
   font-weight: normal;
