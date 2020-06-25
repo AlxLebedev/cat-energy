@@ -7,8 +7,7 @@
 
 .form-page__title {
   @include reset-styles-heading;
-  padding: 21px 0 24px 0;
-  padding-left: 20px;
+  padding: 21px 0 24px 20px;
 }
 
 .form-page__comment {

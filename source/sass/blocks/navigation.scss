@@ -18,9 +18,10 @@
 }
 
 .navigation__list {
+  @include reset-styles-list;
   display: none;
   width: 100%;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
@@ -36,7 +37,7 @@
 }
 
 .navigation__list-item {
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   border-bottom: 1px solid $color-black;
 }
 
