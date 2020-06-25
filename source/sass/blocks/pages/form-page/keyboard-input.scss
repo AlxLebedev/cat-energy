@@ -27,7 +27,7 @@
 }
 
 .keyboard-input__field--invalid {
-  box-shadow: $red-error 0px 0px 0px 1px;
+  box-shadow: 0 0 0 1px $red-error;
   border: none;
 }
 
