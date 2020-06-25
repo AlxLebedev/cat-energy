@@ -10,8 +10,7 @@
 @import "./mixins/resets/button-styles-reset.scss";
 @import "./mixins/top-line.scss";
 @import "./mixins/top-line--dark.scss";
-@import "./mixins/button-styles-design.scss";
-@import "./mixins/heading-large.scss";
+
 @import "./mixins/resets/list-styles-reset.scss";
 @import "./mixins/resets/heading-styles-reset.scss";
 
@@ -21,6 +20,7 @@
 @import "./global-styles/body-styles.scss";
 
 @import "./blocks/button.scss";
+@import "./blocks/heading.scss";
 
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";

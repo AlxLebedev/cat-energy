@@ -7,7 +7,7 @@
 
 .form-page__title {
   @include heading-styles-reset;
-  @include heading-large;
+  // @include heading-large;
   padding: 21px 0 24px 0;
   padding-left: 20px;
 }
