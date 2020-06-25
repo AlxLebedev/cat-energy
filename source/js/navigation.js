@@ -2,7 +2,7 @@
   const navList = document.querySelector('.navigation__list');
   const navButton = document.querySelector('.navigation__toggle-button');
 
-  navList.classList.remove('navigation__list--noJS');
+  navList.classList.remove('navigation__list--no-js');
 
   navButton.addEventListener('click', () => {
     if (!navList.classList.contains('navigation__list--opend')) {
