@@ -1,6 +1,20 @@
 .keyboard-input {
+  position: relative;
   display: flex;
   align-items: center;
+}
+
+.keyboard-input__icon {
+  position: absolute;
+  left: calc(100% - 25px);
+}
+
+.keyboard-input__icon--type-email {
+  top: calc(50% - 7px);
+}
+
+.keyboard-input__icon--type-tel {
+  top: calc(50% - 10px);
 }
 
 .keyboard-input input::placeholder {
@@ -33,18 +47,4 @@
 
 .keyboard-input > .keyboard-input__field--invalid {
   border-color: $red-error;
-}
-
-.keyboard-input__field--type-email {
-  background-image: url("../img/icon-mail.svg");
-  background-size: 17px 13px;
-  background-repeat: no-repeat;
-  background-position: left calc(100% - 20px) bottom 50%;
-}
-
-.keyboard-input__field--type-tel {
-  background-image: url("../img/icon-phone.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: left calc(100% - 15px) bottom 50%;
 }
