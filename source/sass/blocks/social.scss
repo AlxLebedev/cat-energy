@@ -1,5 +1,5 @@
 .social__list {
-  @include list-styles-reset;
+  @include reset-styles-list;
   display: flex;
   justify-content: space-between;
   width: 125px;

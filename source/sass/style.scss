@@ -7,10 +7,9 @@
 // mixins
 
 @import "./mixins/visually-hidden.scss";
-@import "./mixins/resets/button-styles-reset.scss";
-
-@import "./mixins/resets/list-styles-reset.scss";
-@import "./mixins/resets/heading-styles-reset.scss";
+@import "./mixins/resets/reset-styles-button.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
 
 // global-styles
 

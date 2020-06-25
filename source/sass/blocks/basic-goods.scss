@@ -3,7 +3,7 @@
 }
 
 .basic-goods__list {
-  @include list-styles-reset;
+  @include reset-styles-list;
 }
 
 .basic-goods__item {

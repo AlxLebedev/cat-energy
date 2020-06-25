@@ -47,7 +47,7 @@
 }
 
 .form__list {
-  @include list-styles-reset;
+  @include reset-styles-list;
   padding: 22px 20px 22px 20px;
   max-width: 350px;
   margin: auto;
@@ -69,7 +69,7 @@
 }
 
 .form__button {
-  @include button-styles-reset;
+  @include reset-styles-button;
 }
 
 .form__button:hover {

@@ -5,7 +5,7 @@
 }
 
 .slider__list {
-  @include list-styles-reset;
+  @include reset-styles-list;
   position: relative;
   min-height: 240px;
   overflow: hidden;
@@ -34,7 +34,7 @@
 }
 
 .slider__button {
-  @include button-styles-reset;
+  @include reset-styles-button;
   padding: 0;
   border-bottom: 1px dashed $gray-dark;
   font-size: 14px;

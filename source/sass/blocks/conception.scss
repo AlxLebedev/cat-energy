@@ -3,13 +3,12 @@
 }
 
 .conception__title {
-  @include heading-styles-reset;
-  // @include heading-large;
+  @include reset-styles-heading;
   margin-bottom: 33px;
 }
 
 .conception__list {
-  @include list-styles-reset;
+  @include reset-styles-list;
   max-width: 350px;
   margin: auto;
 }

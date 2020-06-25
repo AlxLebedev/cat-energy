@@ -5,7 +5,7 @@
 }
 
 .product__title {
-  @include heading-styles-reset;
+  @include reset-styles-heading;
   color: $font-color-black;
   font-family: $oswald;
   font-size: 16px;
@@ -19,7 +19,7 @@
 }
 
 .product__properties {
-  @include list-styles-reset;
+  @include reset-styles-list;
   font-size: 12px;
   line-height: 16px;
   width: 141px;
@@ -32,7 +32,7 @@
 }
 
 .product__order-button {
-  @include button-styles-reset;
+  @include reset-styles-button;
 }
 
 .product__order-button:hover {

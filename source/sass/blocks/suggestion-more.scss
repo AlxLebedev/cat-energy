@@ -17,7 +17,7 @@
 }
 
 .suggestion-more__title {
-  @include heading-styles-reset;
+  @include reset-styles-heading;
   color: $font-color-black;
   font-family: $oswald;
   font-size: 16px;
@@ -36,7 +36,7 @@
 }
 
 .suggestion-more__button {
-  @include button-styles-reset;
+  @include reset-styles-button;
   color: $font-color-gray;
   background-color: $gray-default;
 }

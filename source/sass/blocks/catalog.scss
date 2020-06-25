@@ -4,8 +4,7 @@
 }
 
 .catalog__title {
-  @include heading-styles-reset;
-  // @include heading-large;
+  @include reset-styles-heading;
   padding: 21px 0 24px 0;
   margin-left: 22px;
 }

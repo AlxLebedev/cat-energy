@@ -7,8 +7,7 @@
 }
 
 .real-case__title {
-  @include heading-styles-reset;
-  // @include heading-large;
+  @include reset-styles-heading;
   margin-bottom: 33px;
 }
 
@@ -17,7 +16,7 @@
 }
 
 .real-case__indicators {
-  @include list-styles-reset;
+  @include reset-styles-list;
   display: flex;
   justify-content: space-between;
   margin-top: 27px;
