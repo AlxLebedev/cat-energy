@@ -1,7 +1,7 @@
-const invalidClassName = 'keyboard-input__field--invalid';
-const invalidIconClaccName = 'keyboard-input__icon--invalid';
-const validIconClassName = 'keyboard-input__icon--valid';
-const keyInputs = document.querySelectorAll('.keyboard-input__field');
+const invalidClassName = 'input-keyboard__field--invalid';
+const invalidIconClaccName = 'input-keyboard__icon--invalid';
+const validIconClassName = 'input-keyboard__icon--valid';
+const keyInputs = document.querySelectorAll('.input-keyboard__field');
 let currentIcon = null;
 
 keyInputs.forEach(input => {

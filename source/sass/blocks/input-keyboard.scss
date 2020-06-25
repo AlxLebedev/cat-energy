@@ -1,36 +1,36 @@
-.keyboard-input {
+.input-keyboard {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.keyboard-input__icon {
+.input-keyboard__icon {
   position: absolute;
   left: calc(100% - 25px);
 }
 
-.keyboard-input__icon--invalid {
+.input-keyboard__icon--invalid {
   fill: $red-error;
 }
 
-.keyboard-input__icon--valid {
+.input-keyboard__icon--valid {
   fill: $green-deafault;
 }
 
-.keyboard-input__icon--type-email {
+.input-keyboard__icon--type-email {
   top: calc(50% - 7px);
 }
 
-.keyboard-input__icon--type-tel {
+.input-keyboard__icon--type-tel {
   top: calc(50% - 10px);
 }
 
-.keyboard-input input::placeholder {
+.input-keyboard input::placeholder {
   color: $font-color-gray;
   opacity: 1;
 }
 
-.keyboard-input__field {
+.input-keyboard__field {
   font: inherit;
   text-transform: uppercase;
   width: 100px;
@@ -40,19 +40,19 @@
   padding: 7px 45px 7px 15px;
 }
 
-.keyboard-input__field:invalid {
+.input-keyboard__field:invalid {
   box-shadow: none;
   border: 1px solid $gray-middle;
 }
 
-.keyboard-input__field:hover {
+.input-keyboard__field:hover {
   border-color: $gray-dark;
 }
 
-.keyboard-input__field:active {
+.input-keyboard__field:active {
   border-color: $gray-havy-dark;
 }
 
-.keyboard-input > .keyboard-input__field--invalid {
+.input-keyboard > .input-keyboard__field--invalid {
   border-color: $red-error;
 }
