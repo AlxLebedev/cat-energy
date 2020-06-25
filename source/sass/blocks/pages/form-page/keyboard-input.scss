@@ -9,6 +9,14 @@
   left: calc(100% - 25px);
 }
 
+.keyboard-input__icon--invalid {
+  fill: $red-error;
+}
+
+.keyboard-input__icon--valid {
+  fill: $green-deafault;
+}
+
 .keyboard-input__icon--type-email {
   top: calc(50% - 7px);
 }
