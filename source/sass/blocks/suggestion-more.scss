@@ -37,9 +37,6 @@
 
 .suggestion-more__button {
   @include button-styles-reset;
-  @include button-styles-design;
-  font-size: 16px;
-  line-height: 20px;
   color: $font-color-gray;
   background-color: $gray-default;
 }

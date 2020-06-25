@@ -43,7 +43,6 @@
 
 .offer__button {
   @include button-styles-reset;
-  @include button-styles-design;
 }
 
 .offer__button:hover {

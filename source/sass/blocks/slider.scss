@@ -37,6 +37,11 @@
   @include button-styles-reset;
   padding: 0;
   border-bottom: 1px dashed $gray-dark;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-color-gray;
+  width: fit-content;
+  background-color: transparent;
 }
 
 .slider__button:hover {

@@ -28,7 +28,6 @@
 
 .additional-product__order-button {
   @include button-styles-reset;
-  @include button-styles-design;
 }
 
 .additional-product__order-button:hover {
