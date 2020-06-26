@@ -15,15 +15,13 @@
 
   &__list {
     @include reset-styles-list;
-    max-width: 350px;
-    margin: auto;
   }
 
   &__item {
     position: relative;
-    padding: 3px 0 3px 80px;
+    padding-left: 80px;
     margin-bottom: 32px;
-    max-width: 202px;
+    min-height: 60px;
 
     &:last-child {
       margin-bottom: 0;
