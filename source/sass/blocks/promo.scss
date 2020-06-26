@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media #{$media-retina} {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
