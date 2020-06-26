@@ -1,31 +1,33 @@
 @import "./variables/colors.scss";
 
-.footer__wrapper {
-  padding: 38px 20px 22px;
-}
+.footer {
+  &__wrapper {
+    padding: 38px 20px 22px;
+  }
 
-.footer__logo {
-  display: flex;
-}
+  &__logo {
+    display: flex;
+  }
 
-.footer__logo-link {
-  margin: auto;
-  width: 128px;
-  height: 24px;
-}
+  &__logo-link {
+    margin: auto;
+    width: 128px;
+    height: 24px;
+  }
 
-.footer__social {
-  padding: 20px 0;
-  border-top: 1px solid $color-gray-middle;
-  border-bottom: 1px solid $color-gray-middle;
-  margin-top: 30px;
-  margin-bottom: 25px;
-}
+  &__social {
+    padding: 20px 0;
+    border-top: 1px solid $color-gray-middle;
+    border-bottom: 1px solid $color-gray-middle;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
 
-.footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  line-height: 16px;
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

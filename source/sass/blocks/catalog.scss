@@ -1,13 +1,15 @@
 @import "./variables/colors.scss";
 @import "./mixins/resets/reset-styles-heading.scss";
 
-.catalog__wrapper {
-  border-top: 1px solid $color-gray-middle;
-  padding-bottom: 35px;
-}
+.catalog {
+  &__wrapper {
+    border-top: 1px solid $color-gray-middle;
+    padding-bottom: 35px;
+  }
 
-.catalog__title {
-  @include reset-styles-heading;
-  padding: 22px 0;
-  margin-left: 22px;
+  &__title {
+    @include reset-styles-heading;
+    padding: 22px 0;
+    margin-left: 22px;
+  }
 }

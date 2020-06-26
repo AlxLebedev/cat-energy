@@ -47,7 +47,9 @@ keyInputs.forEach(input => {
   input.addEventListener('invalid', () => {
     input.classList.add(invalidClassName);
     if (input.nextElementSibling) {
-      input.nextElementSibling.classList.add(invalidIconClaccName);
+      if (!input.validity.valid) {
+        input.nextElementSibling.classList.add(invalidIconClaccName);
+      }
     }
   });
 });

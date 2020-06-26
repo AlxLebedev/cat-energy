@@ -1,21 +1,23 @@
 @import "./variables/colors.scss";
 @import "./variables/font-family.scss";
 
-.textarea__field {
-  box-sizing: border-box;
-  border: 1px solid $color-gray-middle;
-  width: 100%;
-  height: 135px;
-  padding: 14px;
-}
+.textarea {
+  &__field {
+    box-sizing: border-box;
+    border: 1px solid $color-gray-middle;
+    width: 100%;
+    height: 135px;
+    padding: 14px;
 
-.textarea__field::placeholder {
-  font-family: $font-oswald;
-  text-transform: uppercase;
-  color: $color-gray-darkest;
-  opacity: 1;
-}
+    &::placeholder {
+      font-family: $font-oswald;
+      text-transform: uppercase;
+      color: $color-gray-darkest;
+      opacity: 1;
+    }
 
-.textarea__field:hover {
-  border: 1px solid $color-gray-dark;
+    &:hover {
+      border: 1px solid $color-gray-dark;
+    }
+  }
 }

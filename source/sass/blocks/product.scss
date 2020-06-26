@@ -4,47 +4,49 @@
 @import "./mixins/resets/reset-styles-list.scss";
 @import "./mixins/resets/reset-styles-heading.scss";
 
-.product__container {
-  display: flex;
-  max-width: 280px;
-  margin: auto;
-}
+.product {
+  &__container {
+    display: flex;
+    max-width: 280px;
+    margin: auto;
+  }
 
-.product__title {
-  @include reset-styles-heading;
-  color: $color-black;
-  font-family: $font-oswald;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
+  &__title {
+    @include reset-styles-heading;
+    color: $color-black;
+    font-family: $font-oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
 
-.product__title--next-line {
-  display: block;
-}
+    &--next-line {
+      display: block;
+    }
+  }
 
-.product__properties {
-  @include reset-styles-list;
-  font-size: 12px;
-  line-height: 16px;
-  width: 141px;
-  margin-top: 15px;
-}
+  &__properties {
+    @include reset-styles-list;
+    font-size: 12px;
+    line-height: 16px;
+    width: 141px;
+    margin-top: 15px;
+  }
 
-.product__properties-group {
-  display: flex;
-  justify-content: space-between;
-}
+  &__properties-group {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.product__order-button {
-  @include reset-styles-button;
-}
+  &__order-button {
+    @include reset-styles-button;
 
-.product__order-button:hover {
-  background-color: $color-green-dark;
-}
+    &:hover {
+      background-color: $color-green-dark;
+    }
 
-.product__order-button:active {
-  color: $color-green-light;
+    &:active {
+      color: $color-green-light;
+    }
+  }
 }

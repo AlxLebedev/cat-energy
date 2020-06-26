@@ -7,38 +7,38 @@
   border-top: 1px solid $color-gray-dark;
   padding-top: 13px;
   padding-bottom: 17px;
-}
 
-.additional-product__title {
-  @include reset-styles-list;
-  font-family: $font-oswald;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
+  &__title {
+    @include reset-styles-list;
+    font-family: $font-oswald;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
 
-.additional-product__properties {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  line-height: 14px;
-  margin-top: 15px;
-  margin-bottom: 14px;
-}
+  &__properties {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+  }
 
-.additional-product__price {
-  text-transform: uppercase;
-}
+  &__price {
+    text-transform: uppercase;
+  }
 
-.additional-product__order-button {
-  @include reset-styles-button;
-}
+  &__order-button {
+    @include reset-styles-button;
 
-.additional-product__order-button:hover {
-  background-color: $color-green-dark;
-}
+    &:hover {
+      background-color: $color-green-dark;
+    }
 
-.additional-product__order-button:active {
-  color: $color-green-light;
+    &:active {
+      color: $color-green-light;
+    }
+  }
 }

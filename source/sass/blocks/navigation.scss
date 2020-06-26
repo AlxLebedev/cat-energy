@@ -2,58 +2,61 @@
 @import "./variables/font-family.scss";
 @import "./mixins/resets/reset-styles-list.scss";
 
-.navigation__toggle-button {
-  position: absolute;
-  top: 12px;
-  left: calc(100% - 80px);
-  width: 60px;
-  height: 42px;
-  padding: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px 18px;
-  border: none;
-  cursor: pointer;
-}
+.navigation {
+  &__toggle-button {
+    position: absolute;
+    top: 12px;
+    left: calc(100% - 80px);
+    width: 60px;
+    height: 42px;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 18px;
+    border: none;
+    cursor: pointer;
 
-.navigation__toggle-button--close {
-  background-image: url("../img/icon-close.svg");
-}
+    &--close {
+      background-image: url("../img/icon-close.svg");
+    }
 
-.navigation__list {
-  @include reset-styles-list;
-  display: none;
-  width: 100%;
-  margin-top: 20px;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
-  list-style-type: none;
-}
+  }
 
-.navigation__list--opend {
-  display: block;
-}
+  &__list {
+    @include reset-styles-list;
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
 
-.navigation__list--no-js {
-  display: block;
-}
+    &--opend {
+      display: block;
+    }
 
-.navigation__list-item {
-  padding: 20px 0;
-  border-bottom: 1px solid $color-black;
-}
+    &--no-js {
+      display: block;
+    }
+  }
 
-.navigation__list-item:first-child {
-  border-top: 1px solid $color-black;
-}
+  &__list-item {
+    padding: 20px 0;
+    border-bottom: 1px solid $color-black;
 
-.navigation__link {
-  font-family: $font-oswald;
-  font-size: 16px;
-  line-height: 16px;
-  color: $color-black;
-  text-decoration: none;
+    &:first-child {
+      border-top: 1px solid $color-black;
+    }
+  }
+
+  &__link {
+    font-family: $font-oswald;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-black;
+    text-decoration: none;
+  }
 }

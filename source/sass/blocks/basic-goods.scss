@@ -2,15 +2,17 @@
 @import "./mixins/visually-hidden.scss";
 @import "./mixins/resets/reset-styles-list.scss";
 
-.basic-goods__title {
-  @include visually-hidden;
-}
+.basic-goods {
+  &__title {
+    @include visually-hidden;
+  }
 
-.basic-goods__list {
-  @include reset-styles-list;
-}
+  &__list {
+    @include reset-styles-list;
+  }
 
-.basic-goods__item {
-  border-top: 1px solid $color-gray-middle;
-  padding: 0 20px 25px;
+  &__item {
+    border-top: 1px solid $color-gray-middle;
+    padding: 0 20px 25px;
+  }
 }

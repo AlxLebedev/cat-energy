@@ -4,100 +4,102 @@
 @import "./mixins/resets/reset-styles-list.scss";
 @import "./mixins/resets/reset-styles-heading.scss";
 
-.services__wrapper {
-  padding: 0 20px;
-}
+.services {
+  &__wrapper {
+    padding: 0 20px;
+  }
 
-.services__title {
-  @include visually-hidden;
-}
+  &__title {
+    @include visually-hidden;
+  }
 
-.services__list {
-  @include reset-styles-list;
-}
+  &__list {
+    @include reset-styles-list;
+  }
 
-.services__item {
-  position: relative;
-  background-color: $color-gray-default;
-  padding: 36px 20px 20px;
-}
+  &__item {
+    position: relative;
+    background-color: $color-gray-default;
+    padding: 36px 20px 20px;
 
-.services__item:first-child {
-  margin-bottom: 20px;
-}
+    &:first-child {
+      margin-bottom: 20px;
+    }
 
-.services__item::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 12px;
-  width: 67px;
-  height: 67px;
-  background-repeat: no-repeat;
-}
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 12px;
+      width: 67px;
+      height: 67px;
+      background-repeat: no-repeat;
+    }
 
-.services__item--slimming::before {
-  background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
-  background-size: 35px 49px, 100%;
-  background-position: bottom 12px center, center;
-}
+    &--slimming::before {
+      background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-size: 35px 49px, 100%;
+      background-position: bottom 12px center, center;
+    }
 
-.services__item--pro::before {
-  background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
-  background-size: 67px 28px, 100%;
-  background-position: center, center;
-}
+    &--pro::before {
+      background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-size: 67px 28px, 100%;
+      background-position: center, center;
+    }
+  }
 
-.services__item-title {
-  @include reset-styles-heading;
-  font-family: $font-oswald;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  margin-left: 72px;
-  color: $color-black;
-  text-transform: uppercase;
-}
+  &__item-title {
+    @include reset-styles-heading;
+    font-family: $font-oswald;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 72px;
+    color: $color-black;
+    text-transform: uppercase;
+  }
 
-.services__item-description {
-  margin: 0 0 20px 0;
-  padding: 39px 20px 24px 0;
-  border-bottom: 1px solid $color-gray-middle;
-}
+  &__item-description {
+    margin: 0 0 20px 0;
+    padding: 39px 20px 24px 0;
+    border-bottom: 1px solid $color-gray-middle;
+  }
 
-.services__item-link {
-  position: relative;
-  font-family: $font-oswald;
-  color: $color-black;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+  &__item-link {
+    position: relative;
+    font-family: $font-oswald;
+    color: $color-black;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
 
-.services__item-link:active {
-  color: $color-gray-havy-dark;
-}
+    &:active {
+      color: $color-gray-havy-dark;
+    }
 
-.services__item-link::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 97px;
-  width: 33px;
-  height: 11px;
-  background-image: url("../img/icon-right-arrow-verylong.svg");
-  background-repeat: no-repeat;
-  background-position: -5px;
-  background-size: 33px 11px;
-  transition: 0.5s;
-}
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 97px;
+      width: 33px;
+      height: 11px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
+      background-position: -5px;
+      background-size: 33px 11px;
+      transition: 0.5s;
+    }
 
-.services__item-link:hover::after {
-  background-position: left;
-  transition: 0.5s;
-}
+    &:hover::after {
+      background-position: left;
+      transition: 0.5s;
+    }
 
-.services__item-link:active::after {
-  opacity: 0.4;
+    &:active::after {
+      opacity: 0.4;
+    }
+  }
 }

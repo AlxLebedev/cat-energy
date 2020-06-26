@@ -2,84 +2,87 @@
 @import "./mixins/resets/reset-styles-button.scss";
 @import "./mixins/resets/reset-styles-list.scss";
 
-.slider__wrapper {
-  width: 311px;
-  margin: auto;
-  padding-bottom: 35px;
-}
+.slider {
+  &__wrapper {
+    width: 311px;
+    margin: auto;
+    padding-bottom: 35px;
+  }
 
-.slider__list {
-  @include reset-styles-list;
-  position: relative;
-  min-height: 240px;
-  overflow: hidden;
-}
+  &__list {
+    @include reset-styles-list;
+    position: relative;
+    min-height: 240px;
+    overflow: hidden;
+  }
 
-.slider__item {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: 1s;
-  width: 100%;
-  height: 100%;
-}
+  &__item {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
 
-.slider__item--active {
-  visibility: visible;
-  opacity: 1;
-}
+    &--active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
-.slider__controls {
-  display: flex;
-  width: 200px;
-  margin: 33px auto 0 auto;
-  align-items: center;
-  justify-content: space-between;
-}
+  &__controls {
+    display: flex;
+    width: 200px;
+    margin: 33px auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.slider__button {
-  @include reset-styles-button;
-  padding: 0;
-  border-bottom: 1px dashed $color-gray-dark;
-  font-size: 14px;
-  line-height: 18px;
-  color: $color-gray-darkest;
-  width: 43px;
-  background-color: transparent;
-  margin: 0;
-}
+  &__button {
+    @include reset-styles-button;
+    padding: 0;
+    border-bottom: 1px dashed $color-gray-dark;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-gray-darkest;
+    width: 43px;
+    background-color: transparent;
+    margin: 0;
 
-.slider__button:hover {
-  border-bottom: 1px solid $color-gray-havy-dark;
-}
+    &:hover {
+      border-bottom: 1px solid $color-gray-havy-dark;
+    }
 
-.slider__button:active {
-  border-bottom: 1px solid $color-gray-default;
-}
+    &:active {
+      border-bottom: 1px solid $color-gray-default;
+    }
 
-.slider__tumbler-container {
-  position: relative;
-  box-sizing: border-box;
-  width: 85px;
-  height: 14px;
-  border: 1px solid $color-gray-dark;
-  border-radius: 6px;
-  background-color: $color-white;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+  }
 
-.slider__tumbler {
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  width: 35px;
-  height: 6px;
-  border-radius: 5px;
-  background-color: $color-green-deafault;
-  transition: left 1s, transform 1s;
-}
+  &__tumbler-container {
+    position: relative;
+    box-sizing: border-box;
+    width: 85px;
+    height: 14px;
+    border: 1px solid $color-gray-dark;
+    border-radius: 6px;
+    background-color: $color-white;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-.slider__tumbler--position-after {
-  left: calc(100% - 40px);
+  &__tumbler {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: $color-green-deafault;
+    transition: left 1s, transform 1s;
+
+    &--position-after {
+      left: calc(100% - 40px);
+    }
+  }
 }

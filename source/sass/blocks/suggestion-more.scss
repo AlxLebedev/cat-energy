@@ -5,51 +5,51 @@
 
 .suggestion-more {
   position: relative;
-}
 
-.suggestion-more::before {
-  content: "";
-  position: absolute;
-  top: 27px;
-  left: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/icon-plus-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 30px;
-  opacity: 0.2;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    opacity: 0.2;
+  }
 
-.suggestion-more__title {
-  @include reset-styles-heading;
-  color: $color-black;
-  font-family: $font-oswald;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 80px;
-}
+  &__title {
+    @include reset-styles-heading;
+    color: $color-black;
+    font-family: $font-oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+  }
 
-.suggestion-more__slogan {
-  font-size: 12px;
-  line-height: 16px;
-  margin-top: 11px;
-  margin-bottom: 22px;
-  text-align: center;
-}
+  &__slogan {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 11px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
 
-.suggestion-more__button {
-  @include reset-styles-button;
-  color: $color-gray-darkest;
-  background-color: $color-gray-default;
-}
+  &__button {
+    @include reset-styles-button;
+    color: $color-gray-darkest;
+    background-color: $color-gray-default;
 
-.suggestion-more__button:hover {
-  background-color: $color-gray-light;
-}
+    &:hover {
+      background-color: $color-gray-light;
+    }
 
-.suggestion-more__button:active {
-  color: $color-gray-havy-dark;
+    &:active {
+      color: $color-gray-havy-dark;
+    }
+  }
 }

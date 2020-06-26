@@ -1,41 +1,44 @@
 @import "./variables/colors.scss";
 
-.radio__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
+.radio {
+  &__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 
-.radio__text {
-  margin-left: 40px;
-  user-select: none;
-}
 
-.radio__text::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  width: 28px;
-  height: 28px;
-  border: 8px solid $color-white;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px $color-gray-middle;
-}
+    &:not(:disabled):not(:checked) + .radio__text:hover::before {
+      box-shadow: 0 0 0 1px $color-gray-dark;
+    }
 
-.radio__input:not(:disabled):not(:checked) + .radio__text:hover::before {
-  box-shadow: 0 0 0 1px $color-gray-dark;
-}
+    &:not(:disabled):active + .radio__text {
+      opacity: 0.6;
+    }
 
-.radio__input:not(:disabled):active + .radio__text {
-  opacity: 0.6;
-}
+    &:not(:disabled):active + .radio__text::before {
+      opacity: 0.6;
+    }
 
-.radio__input:not(:disabled):active + .radio__text::before {
-  opacity: 0.6;
-}
+    &:checked + .radio__text::before {
+      background-color: $color-green-deafault;
+    }
+  }
 
-.radio__input:checked + .radio__text::before {
-  background-color: $color-green-deafault;
+  &__text {
+    margin-left: 40px;
+    user-select: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 28px;
+      height: 28px;
+      border: 8px solid $color-white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px $color-gray-middle;
+    }
+  }
 }

@@ -16,45 +16,45 @@
   @media #{$media-retina} {
     background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #65a93c 305px, #ffffff 305px);
   }
-}
 
-.offer__container {
-  padding: 29px 20px 22px;
-}
+  &__container {
+    padding: 29px 20px 22px;
+  }
 
-.offer__title {
-  @include visually-hidden;
-}
+  &__title {
+    @include visually-hidden;
+  }
 
-.offer__slogan-title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-}
+  &__slogan-title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
 
-.offer__slogan-call-to-action {
-  display: block;
-  margin-top: 19px;
-  margin-bottom: 29px;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
+  &__slogan-call-to-action {
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 29px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
 
-.offer__image {
-  width: 280px;
-  height: 270px;
-}
+  &__image {
+    width: 280px;
+    height: 270px;
+  }
 
-.offer__button {
-  @include reset-styles-button;
-}
+  &__button {
+    @include reset-styles-button;
 
-.offer__button:hover {
-  background-color: $color-green-dark;
-}
+    &:hover {
+      background-color: $color-green-dark;
+    }
 
-.offer__button:active {
-  color: $color-green-light;
+    &:active {
+      color: $color-green-light;
+    }
+  }
 }

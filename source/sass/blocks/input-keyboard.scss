@@ -4,55 +4,55 @@
   position: relative;
   display: flex;
   align-items: center;
-}
 
-.input-keyboard__icon {
-  position: absolute;
-  left: calc(100% - 25px);
-}
+  &__icon {
+    position: absolute;
+    left: calc(100% - 25px);
 
-.input-keyboard__icon--invalid {
-  fill: $color-red-error;
-}
+    &--invalid {
+      fill: $color-red-error;
+    }
 
-.input-keyboard__icon--valid {
-  fill: $color-green-deafault;
-}
+    &--valid {
+      fill: $color-green-deafault;
+    }
 
-.input-keyboard__icon--type-email {
-  top: calc(50% - 7px);
-}
+    &--type-email {
+      top: calc(50% - 7px);
+    }
 
-.input-keyboard__icon--type-tel {
-  top: calc(50% - 10px);
-}
+    &--type-tel {
+      top: calc(50% - 10px);
+    }
+  }
 
-.input-keyboard input::placeholder {
-  color: $color-gray-darkest;
-  opacity: 1;
-}
+  &__field {
+    font: inherit;
+    text-transform: uppercase;
+    width: 100px;
+    flex-grow: 1;
+    margin-left: 15px;
+    border: 1px solid $color-gray-middle;
+    padding: 7px 45px 7px 15px;
 
-.input-keyboard__field {
-  font: inherit;
-  text-transform: uppercase;
-  width: 100px;
-  flex-grow: 1;
-  margin-left: 15px;
-  border: 1px solid $color-gray-middle;
-  padding: 7px 45px 7px 15px;
-}
+    &::placeholder {
+      color: $color-gray-darkest;
+      opacity: 1;
+    }
 
-.input-keyboard__field:invalid {
-  box-shadow: none;
-  border: 1px solid $color-gray-middle;
-}
+    &:invalid {
+      box-shadow: none;
+      border: 1px solid $color-gray-middle;
+    }
 
-.input-keyboard__field:hover {
-  border-color: $color-gray-dark;
-}
+    &:hover {
+      border-color: $color-gray-dark;
+    }
 
-.input-keyboard__field:active {
-  border-color: $color-gray-havy-dark;
+    &:active {
+      border-color: $color-gray-havy-dark;
+    }
+  }
 }
 
 .input-keyboard > .input-keyboard__field--invalid {
