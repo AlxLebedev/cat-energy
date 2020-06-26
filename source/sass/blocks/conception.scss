@@ -1,3 +1,8 @@
+@import "./variables/colors.scss";
+@import "./variables/pixel-density.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
 .conception__wrapper {
   padding: 32px 20px 47px;
 }

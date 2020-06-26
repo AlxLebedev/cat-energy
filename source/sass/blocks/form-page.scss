@@ -1,7 +1,11 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
 .form-page__wrapper {
   border-top: 1px solid $color-gray-middle;
   color: $color-black;
-  font-family: $oswald;
+  font-family: $font-oswald;
   font-weight: normal;
 }
 

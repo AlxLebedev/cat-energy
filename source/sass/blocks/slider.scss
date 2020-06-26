@@ -1,3 +1,7 @@
+@import "./variables/colors.scss";
+@import "./mixins/resets/reset-styles-button.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+
 .slider__wrapper {
   width: 311px;
   margin: auto;

@@ -1,3 +1,6 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+
 .contacts__text-content {
   display: flex;
   align-items: center;
@@ -10,7 +13,7 @@
 }
 
 .contacts__appeal {
-  font-family: $oswald;
+  font-family: $font-oswald;
   color: $color-black;
   font-size: 16px;
   line-height: 20px;

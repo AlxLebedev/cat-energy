@@ -1,3 +1,7 @@
+@import "./variables/colors.scss";
+@import "./mixins/visually-hidden.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+
 .basic-goods__title {
   @include visually-hidden;
 }

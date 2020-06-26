@@ -1,5 +1,11 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./variables/pixel-density.scss";
+@import "./mixins/visually-hidden.scss";
+@import "./mixins/resets/reset-styles-button.scss";
+
 .offer {
-  font-family: $oswald;
+  font-family: $font-oswald;
   color: $color-white;
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 305px, #ffffff 305px);

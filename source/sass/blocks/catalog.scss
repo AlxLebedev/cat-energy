@@ -1,3 +1,6 @@
+@import "./variables/colors.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
 .catalog__wrapper {
   border-top: 1px solid $color-gray-middle;
   padding-bottom: 35px;

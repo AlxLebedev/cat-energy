@@ -1,3 +1,8 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
 .real-case {
   background-color: $color-gray-default;
 }
@@ -48,7 +53,7 @@
 }
 
 .real-case__indicator-value {
-  font-family: $oswald;
+  font-family: $font-oswald;
   color: $color-black;
   font-size: 24px;
   line-height: 24px;
@@ -57,7 +62,7 @@
 }
 
 .real-case__expenses {
-  font-family: $oswald;
+  font-family: $font-oswald;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;

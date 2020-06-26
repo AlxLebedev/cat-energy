@@ -1,3 +1,6 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+
 .textarea__field {
   box-sizing: border-box;
   border: 1px solid $color-gray-middle;
@@ -7,7 +10,7 @@
 }
 
 .textarea__field::placeholder {
-  font-family: $oswald;
+  font-family: $font-oswald;
   text-transform: uppercase;
   color: $color-gray-darkest;
   opacity: 1;

@@ -1,3 +1,5 @@
+@import "./mixins/resets/reset-styles-list.scss";
+
 .social__list {
   @include reset-styles-list;
   display: flex;

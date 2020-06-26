@@ -1,9 +1,12 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+
 .button {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $oswald;
+  font-family: $font-oswald;
   color: $color-white;
   font-size: 16px;
   line-height: 20px;

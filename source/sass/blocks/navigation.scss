@@ -1,3 +1,7 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+
 .navigation__toggle-button {
   position: absolute;
   top: 12px;
@@ -47,7 +51,7 @@
 }
 
 .navigation__link {
-  font-family: $oswald;
+  font-family: $font-oswald;
   font-size: 16px;
   line-height: 16px;
   color: $color-black;

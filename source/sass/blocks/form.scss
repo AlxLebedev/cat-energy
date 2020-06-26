@@ -1,3 +1,8 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/resets/reset-styles-button.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+
 .form {
   font-size: 16px;
   line-height: 18px;
@@ -12,7 +17,7 @@
 }
 
 .form__fieldset-title {
-  font-family: $oswald;
+  font-family: $font-oswald;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
@@ -81,7 +86,7 @@
 }
 
 .form__hint {
-  font-family: $arial;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

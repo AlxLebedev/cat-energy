@@ -1,3 +1,9 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/visually-hidden.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
 .services__wrapper {
   padding: 0 20px;
 }
@@ -44,7 +50,7 @@
 
 .services__item-title {
   @include reset-styles-heading;
-  font-family: $oswald;
+  font-family: $font-oswald;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
@@ -61,7 +67,7 @@
 
 .services__item-link {
   position: relative;
-  font-family: $oswald;
+  font-family: $font-oswald;
   color: $color-black;
   font-size: 16px;
   line-height: 16px;
