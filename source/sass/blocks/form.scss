@@ -22,10 +22,21 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
-  width: fit-content;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $color-white;
+  &--contacts {
+    width: 57%;
+    max-width: 350px;
+  }
+  &--comments {
+    width: 40%;
+    max-width: 130px;
+  }
+  &--additional {
+    width: 45%;
+    max-width: 150px;
+  }
 }
 
 .form__fieldset-title::before {
@@ -39,9 +50,9 @@
   z-index: -1;
 }
 
-.form__fieldset-title--newLine {
-  display: block;
-}
+// .form__fieldset-title--newLine {
+//   display: block;
+// }
 
 .form_fieldset-textarea {
   padding: 0 20px;
