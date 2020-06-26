@@ -90,10 +90,12 @@
   background-repeat: no-repeat;
   background-position: -5px;
   background-size: 33px 11px;
+  transition: 0.5s;
 }
 
 .services__item-link:hover::after {
   background-position: left;
+  transition: 0.5s;
 }
 
 .services__item-link:active::after {
