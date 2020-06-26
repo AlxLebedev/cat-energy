@@ -22,8 +22,8 @@
     background-color: $color-gray-default;
     padding: 36px 20px 20px;
 
-    &:first-child {
-      margin-bottom: 20px;
+    &:nth-child(n + 2) {
+      margin-top: 20px;
     }
 
     &::before {
