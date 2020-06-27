@@ -4,15 +4,14 @@
   &__list {
     @include reset-styles-list;
     display: flex;
-    justify-content: space-between;
-    width: 125px;
-    height: 19px;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
     width: 22px;
     height: 19px;
+    margin: 20px 15px;
   }
 
   &__link {
