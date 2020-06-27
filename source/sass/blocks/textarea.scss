@@ -3,6 +3,9 @@
 
 .textarea {
   &__field {
+    font-family: $font-oswald;
+    text-transform: uppercase;
+    color: $color-gray-darkest;
     box-sizing: border-box;
     border: 1px solid $color-gray-middle;
     width: 100%;
