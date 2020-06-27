@@ -25,9 +25,9 @@
   &__wrapper {
     padding: 190px 35px 40px;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
-    background-color: $color-green-deafault;
+    background-color: $color-green-middle;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 
     @media #{$media-retina} {
       background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -36,7 +36,6 @@
 
   &__content {
     width: 165px;
-    height: 56px;
     margin: auto;
     color: $color-white;
     font-size: 16px;
