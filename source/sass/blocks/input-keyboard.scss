@@ -57,8 +57,8 @@
       padding-right: 30px;
     }
   }
-}
 
-.input-keyboard > .input-keyboard__field--invalid {
-  border-color: $color-red-error;
+  & > .input-keyboard__field--invalid {
+    border-color: $color-red-error;
+  }
 }
