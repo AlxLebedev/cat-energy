@@ -11,6 +11,14 @@
     margin: auto;
   }
 
+  &__img-box {
+    display: flex;
+  }
+
+  &__image {
+    margin: auto;
+  }
+
   &__title {
     @include reset-styles-heading;
     color: $color-black;
@@ -30,7 +38,7 @@
     font-size: 12px;
     line-height: 16px;
     width: 141px;
-    margin-top: 15px;
+    margin: 15px 0;
   }
 
   &__properties-group {
