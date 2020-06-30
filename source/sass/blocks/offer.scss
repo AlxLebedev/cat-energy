@@ -1,8 +1,9 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./variables/pixel-density.scss";
-@import "./mixins/visually-hidden.scss";
-@import "./mixins/resets/reset-styles-button.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../variables/pixel-density.scss";
+@import "../mixins/visually-hidden.scss";
+@import "../mixins/resets/reset-styles-button.scss";
+@import "../variables/breakpoint.scss";
 
 .offer {
   font-family: $font-oswald;
@@ -56,5 +57,50 @@
     &:active {
       color: $color-green-light;
     }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .offer {
+    color: $color-black;
+    text-align: left;
+    background-image: none;
+
+    &__container {
+      position: relative;
+      min-height: 810px;
+      padding: 0 0 0 114px;
+    }
+
+    &__slogan-title {
+      font-size: 60px;
+      line-height: 60px;
+      width: 430px;
+    }
+
+    &__slogan-call-to-action {
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 40px;
+    margin-bottom: 48px;
+    }
+
+    &__image {
+      position: absolute;
+      top: 200px;
+      left: 30px;
+      width: 709px;
+      height: 609px;
+      z-index: -1;
+    }
+
+    &__button {
+      margin: 0;
+      width: 245px;
+      height: 55px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
   }
 }
