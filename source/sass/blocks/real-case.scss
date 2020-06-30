@@ -1,7 +1,8 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./mixins/resets/reset-styles-list.scss";
-@import "./mixins/resets/reset-styles-heading.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .real-case {
   background-color: $color-gray-default;
@@ -66,5 +67,78 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 38px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .real-case {
+    background-color: transparent;
+    border-top: 1px solid $color-gray-light;
+
+    &__text-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: last baseline;
+      padding: 42px 30px 80px;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 65px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 700px;
+    }
+
+    &__indicators {
+      margin: 53px 0 0;
+      justify-content: initial;
+    }
+
+    &__indicators-group {
+      width: 162px;
+      height: 72px;
+
+      &:nth-child(n + 2) {
+        margin-left: 40px;
+      }
+    }
+
+    &__indicator-title {
+      font-size: 14px;
+      line-height: 14px;
+      top: 65px;
+      left: 25px;
+      background-color: $color-white;
+      width: auto;
+      padding: 0 5px;
+
+      &--long {
+        left: 12px;
+      }
+    }
+
+    &__indicator-value {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__expenses {
+      margin: 0;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-black;
+      width: 200px;
+      text-align: right;
+    }
+
+    &__slider {
+      background-color: $color-gray-default;
+    }
   }
 }
