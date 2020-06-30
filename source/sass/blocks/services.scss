@@ -1,8 +1,9 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./mixins/visually-hidden.scss";
-@import "./mixins/resets/reset-styles-list.scss";
-@import "./mixins/resets/reset-styles-heading.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../mixins/visually-hidden.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .services {
   &__wrapper {
@@ -100,6 +101,66 @@
 
     &:active::after {
       opacity: 0.4;
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .services {
+    &__wrapper {
+      padding: 0 30px;
+    }
+
+    &__item {
+      padding: 70px 52px;
+    }
+
+    &__item-title {
+      font-size: 36px;
+      line-height: 36px;
+      padding-left: 0;
+
+      &::before {
+        top: 0;
+        left: 360px;
+        width: 268px;
+        height: 220px;
+      }
+
+      &--programm-slimming::before {
+        background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 99px, transparent 100px);
+        background-size: 140px 194px, 100%;
+        background-position: top 0px center, center;
+      }
+
+      &--programm-pro::before {
+        background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 99px, transparent 100px);
+        background-size: 268px 112px, 100%;
+        background-position: center, center;
+      }
+
+      &--programm-pro + .services__item-description {
+        width: 340px;
+      }
+    }
+
+    &__item-description {
+      border: none;
+      margin: 0;
+      width: 372px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 25px 0 56px;
+    }
+
+    &__item-link {
+      font-size: 20px;
+      line-height: 20px;
+
+      &::after {
+        top: 10px;
+        left: 120px;
+      }
     }
   }
 }
