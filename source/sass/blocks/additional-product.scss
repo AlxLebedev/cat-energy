@@ -1,0 +1,44 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/resets/reset-styles-button.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+
+.additional-product {
+  border-top: 1px solid $color-gray-dark;
+  padding-top: 13px;
+  padding-bottom: 17px;
+
+  &__title {
+    @include reset-styles-list;
+    font-family: $font-oswald;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__properties {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+  }
+
+  &__price {
+    text-transform: uppercase;
+  }
+
+  &__order-button {
+    @include reset-styles-button;
+
+    &:hover {
+      background-color: $color-green-dark;
+    }
+
+    &:active {
+      color: $color-green-light;
+    }
+  }
+}

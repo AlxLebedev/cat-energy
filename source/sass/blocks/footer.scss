@@ -1,0 +1,32 @@
+@import "./variables/colors.scss";
+
+.footer {
+  &__wrapper {
+    padding: 38px 20px 22px;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__logo-link {
+    margin: auto;
+    width: 128px;
+    height: 24px;
+  }
+
+  &__social {
+    border-top: 1px solid $color-gray-middle;
+    border-bottom: 1px solid $color-gray-middle;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

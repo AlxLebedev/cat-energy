@@ -1,0 +1,57 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/resets/reset-styles-button.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
+.product {
+  &__container {
+    display: flex;
+    max-width: 280px;
+    margin: auto;
+  }
+
+  &__img-box {
+    display: flex;
+  }
+
+  &__image {
+    margin: auto;
+  }
+
+  &__title {
+    @include reset-styles-heading;
+    color: $color-black;
+    font-family: $font-oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 100px;
+  }
+
+  &__properties {
+    @include reset-styles-list;
+    font-size: 12px;
+    line-height: 16px;
+    width: 141px;
+    margin: 15px 0;
+  }
+
+  &__properties-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__order-button {
+    @include reset-styles-button;
+
+    &:hover {
+      background-color: $color-green-dark;
+    }
+
+    &:active {
+      color: $color-green-light;
+    }
+  }
+}

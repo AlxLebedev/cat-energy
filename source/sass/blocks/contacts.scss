@@ -1,0 +1,42 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+
+.contacts {
+  &__text-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 20px;
+
+    &--background-gray {
+      background-color: $color-gray-default;
+    }
+  }
+
+  &__appeal {
+    font-family: $font-oswald;
+    color: $color-black;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 140px;
+    margin: 0;
+  }
+
+  &__address {
+    font-style: normal;
+    line-height: 20px;
+    width: 140px;
+  }
+
+  &__address-city {
+    display: block;
+    margin-top: 5px;
+  }
+
+  &__map {
+    width: 100%;
+    height: 362px;
+    border: none;
+  }
+}

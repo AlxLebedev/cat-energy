@@ -1,0 +1,18 @@
+@import "./variables/colors.scss";
+@import "./mixins/visually-hidden.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+
+.basic-goods {
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__list {
+    @include reset-styles-list;
+  }
+
+  &__item {
+    border-top: 1px solid $color-gray-middle;
+    padding: 0 20px 25px;
+  }
+}

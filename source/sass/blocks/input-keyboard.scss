@@ -1,0 +1,64 @@
+@import "./variables/colors.scss";
+
+.input-keyboard {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    position: absolute;
+    left: calc(100% - 25px);
+
+    &--invalid {
+      fill: $color-red-error;
+    }
+
+    &--valid {
+      fill: $color-green-deafault;
+    }
+
+    &--type-email {
+      top: calc(50% - 7px);
+    }
+
+    &--type-tel {
+      top: calc(50% - 10px);
+    }
+  }
+
+  &__field {
+    font: inherit;
+    text-transform: uppercase;
+    width: 100px;
+    flex-grow: 1;
+    margin-left: 15px;
+    border: 1px solid $color-gray-middle;
+    padding: 7px 15px;
+
+    &::placeholder {
+      color: $color-gray-darkest;
+      opacity: 1;
+    }
+
+    &:invalid {
+      box-shadow: none;
+      border: 1px solid $color-gray-middle;
+    }
+
+    &:hover {
+      border-color: $color-gray-dark;
+    }
+
+    &:active {
+      border-color: $color-gray-havy-dark;
+    }
+
+    &--with-icon {
+      padding-right: 30px;
+    }
+  }
+
+  & > .input-keyboard__field--invalid {
+    border-color: $color-red-error;
+  }
+}

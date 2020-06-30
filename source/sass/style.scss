@@ -1,0 +1,41 @@
+// global-styles
+
+@import "./global-styles/fonts.scss";
+@import "./global-styles/body-styles.scss";
+
+// blocks
+
+@import "./blocks/button.scss";
+@import "./blocks/heading.scss";
+
+// index
+
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/services.scss";
+@import "./blocks/conception.scss";
+@import "./blocks/real-case.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social.scss";
+
+// catalog
+
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/basic-goods.scss";
+@import "./blocks/suggestion-more.scss";
+@import "./blocks/additional-goods.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/promo.scss";
+
+// form
+
+@import "./blocks/form-page.scss";
+@import "./blocks/form.scss";
+@import "./blocks/input-keyboard.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/checkbox.scss";

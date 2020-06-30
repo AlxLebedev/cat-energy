@@ -1,0 +1,18 @@
+.header {
+  &__wrapper {
+    position: relative;
+    padding: 12px 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: calc(50% - 52px);
+      width: 101px;
+      height: 18px;
+      background-image: url("../img/logo-mobile-header.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "./mixins/resets/reset-styles-list.scss";
+
+.social {
+  &__list {
+    @include reset-styles-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 22px;
+    height: 19px;
+    margin: 20px 15px;
+  }
+
+  &__link {
+    display: block;
+    width: 22px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--vk {
+      background-image: url("../img/icon-vk-mobile.svg");
+      background-size: 22px 12px;
+    }
+
+    &--instagramm {
+      background-image: url("../img/icon-insta-mobile.svg");
+      background-size: 16px 16px;
+    }
+
+    &--facebook {
+      background-image: url("../img/icon-fb-mobile.svg");
+      background-size: 10px 19px;
+    }
+  }
+}

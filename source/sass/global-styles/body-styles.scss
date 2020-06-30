@@ -1,0 +1,11 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+
+body {
+  font-family: $font-arial;
+  color: $color-gray-darkest;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  min-width: 320px;
+}

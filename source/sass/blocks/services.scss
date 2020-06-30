@@ -1,0 +1,105 @@
+@import "./variables/colors.scss";
+@import "./variables/font-family.scss";
+@import "./mixins/visually-hidden.scss";
+@import "./mixins/resets/reset-styles-list.scss";
+@import "./mixins/resets/reset-styles-heading.scss";
+
+.services {
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__list {
+    @include reset-styles-list;
+  }
+
+  &__item {
+    background-color: $color-gray-default;
+    padding: 36px 20px 20px;
+
+    &:nth-child(n + 2) {
+      margin-top: 20px;
+    }
+  }
+
+  &__item-title {
+    @include reset-styles-heading;
+    position: relative;
+    font-family: $font-oswald;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 80px;
+    color: $color-black;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 67px;
+      height: 67px;
+      background-repeat: no-repeat;
+    }
+
+    &--programm-slimming::before {
+      background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-size: 35px 49px, 100%;
+      background-position: bottom 12px center, center;
+    }
+
+    &--programm-pro::before {
+      background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-size: 67px 28px, 100%;
+      background-position: center, center;
+    }
+  }
+
+  &__item-description {
+    margin: 0 0 20px 0;
+    padding: 39px 20px 24px 0;
+    border-bottom: 1px solid $color-gray-middle;
+  }
+
+  &__item-link {
+    position: relative;
+    font-family: $font-oswald;
+    color: $color-black;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:active {
+      color: $color-gray-havy-dark;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 97px;
+      width: 33px;
+      height: 11px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
+      background-position: -5px;
+      background-size: 33px 11px;
+      transition: 0.5s;
+    }
+
+    &:hover::after {
+      background-position: left;
+      transition: 0.5s;
+    }
+
+    &:active::after {
+      opacity: 0.4;
+    }
+  }
+}

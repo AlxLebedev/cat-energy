@@ -1,0 +1,45 @@
+@import "./variables/colors.scss";
+@import "./variables/pixel-density.scss";
+
+.promo {
+  position: relative;
+  box-sizing: border-box;
+  width: 280px;
+  margin: auto;
+  padding-top: 39px;
+  border-top: 1px solid $color-gray-middle;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 104px;
+    left: calc(50% - 30px);
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px 60px;
+  }
+
+  &__wrapper {
+    padding: 190px 35px 40px;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-color: $color-green-middle;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @media #{$media-retina} {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+    }
+  }
+
+  &__content {
+    width: 165px;
+    margin: auto;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
