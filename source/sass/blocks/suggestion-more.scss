@@ -1,7 +1,8 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./mixins/resets/reset-styles-button.scss";
-@import "./mixins/resets/reset-styles-heading.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../mixins/resets/reset-styles-button.scss";
+@import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .suggestion-more {
   position: relative;
@@ -50,6 +51,45 @@
 
     &:active {
       color: $color-gray-havy-dark;
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .suggestion-more {
+    box-sizing: border-box;
+    width: 308px;
+    height: auto;
+    border: 1px solid $color-gray-default;
+    margin-top: 80px;
+    padding: 55px 30px 30px;
+    background-image: none;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: 47px;
+      left: calc(50% - 30px);
+      background-image: url("../img/icon-plus.svg");
+      background-size: 60px 60px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+      width: 170px;
+      margin: 100px auto 25px;
+    }
+
+    &__slogan {
+      font-size: 16px;
+      line-height: 16px;
+      width: 170px;
+      margin: 0 auto 80px;
+    }
+
+    &__button {
+      width: 248px;
     }
   }
 }

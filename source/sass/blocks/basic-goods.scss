@@ -1,6 +1,7 @@
-@import "./variables/colors.scss";
-@import "./mixins/visually-hidden.scss";
-@import "./mixins/resets/reset-styles-list.scss";
+@import "../variables/colors.scss";
+@import "../mixins/visually-hidden.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../variables/breakpoint.scss";
 
 .basic-goods {
   &__title {
@@ -14,5 +15,24 @@
   &__item {
     border-top: 1px solid $color-gray-middle;
     padding: 0 20px 25px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .basic-goods {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      border: none;
+      padding: 0 30px 40px;
+      margin-bottom: 60px;
+      background-image: linear-gradient(transparent 82px, $color-gray-default 82px);
+      background-repeat: no-repeat;
+      background-position: top;
+    }
   }
 }
