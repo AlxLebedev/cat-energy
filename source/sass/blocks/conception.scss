@@ -1,7 +1,9 @@
-@import "./variables/colors.scss";
-@import "./variables/pixel-density.scss";
-@import "./mixins/resets/reset-styles-list.scss";
-@import "./mixins/resets/reset-styles-heading.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../variables/pixel-density.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .conception {
   &__wrapper {
@@ -67,6 +69,83 @@
 
       @media #{$media-retina} {
         background-image: url("../img/advantage-clock@2x.png");
+      }
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .conception {
+    &__wrapper {
+      max-width: $width-tablet;
+      padding: 45px 30px 56px;
+      margin: auto;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 71px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      box-sizing: border-box;
+      position: relative;
+      width: 325px;
+      min-height: 230px;
+      margin-bottom: 80px;
+      padding-top: 100px;
+      padding-right: 80px;
+      font-size: 16px;
+      line-height: 24px;
+
+      &:last-child {
+        margin-bottom: 80px;
+      }
+
+      &:nth-child(even) {
+        margin-left: auto;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: -40px;
+        left: 115px;
+        font-family: $font-oswald;
+        font-size: 280px;
+        line-height: 280px;
+        color: $color-gray-default;
+        z-index: -1;
+      }
+
+      &--type-eco::after {
+        content: "1";
+      }
+
+      &--type-powder::after {
+        content: "2";
+      }
+
+      &--type-dining::after {
+        content: "3";
+      }
+
+      &--type-time::after {
+        content: "4";
       }
     }
   }
