@@ -60,19 +60,19 @@
 @media (min-width: $width-tablet) {
   .product {
     &__container {
-      display: block;
+      flex-direction: column;
+      max-width: 248px;
     }
 
     &__img-box {
       width: 248px;
       height: 160px;
-      justify-content: space-between;
       align-items: flex-end;
-      margin-bottom: 38px;
+      margin-bottom: 50px;
     }
 
     &__image {
-      margin: unset;
+      margin: 0 auto;
     }
 
     &__description {
@@ -83,6 +83,7 @@
     &__title {
       font-size: 20px;
       line-height: 20px;
+      font-weight: 200;
       text-align: center;
       width: 140px;
       margin: auto;
@@ -92,7 +93,7 @@
       font-size: 16px;
       line-height: 16px;
       width: 100%;
-      margin: 30px auto;
+      margin: 25px auto 35px;
     }
 
     &__properties-group {
