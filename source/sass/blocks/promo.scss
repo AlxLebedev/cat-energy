@@ -1,12 +1,13 @@
 @import "../variables/colors.scss";
 @import "../variables/pixel-density.scss";
+@import "../variables/breakpoint.scss";
 
 .promo {
   position: relative;
   box-sizing: border-box;
   width: 280px;
   margin: auto;
-  padding-top: 39px;
+  padding: 40px 0;
   border-top: 1px solid $color-gray-middle;
 
   &::before {
@@ -41,5 +42,33 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .promo {
+    width: 100%;
+    max-width: 768px;
+    border: none;
+    padding: 40px 30px;
+
+    &::before {
+      top: calc(50% - 30px);
+      left: 90px;
+    }
+
+    &__wrapper {
+      padding: 70px 35px;
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+      @media #{$media-retina} {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+      }
+    }
+
+    &__content {
+      text-align: left;
+      margin-left: 390px;
+    }
   }
 }
