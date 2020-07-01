@@ -1,6 +1,7 @@
 @import "../variables/colors.scss";
 @import "../variables/font-family.scss";
 @import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .form-page {
   &__wrapper {
@@ -21,5 +22,25 @@
     text-transform: uppercase;
     padding-left: 20px;
     margin-top: 0;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .form-page {
+    &__wrapper {
+      border: none;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 0 30px 55px;
+    }
+
+    &__comment {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 70px;
+    }
   }
 }

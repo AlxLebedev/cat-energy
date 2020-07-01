@@ -1,5 +1,6 @@
 @import "../variables/colors.scss";
 @import "../variables/font-family.scss";
+@import "../variables/breakpoint.scss";
 
 .textarea {
   &__field {
@@ -22,6 +23,14 @@
 
     &:hover {
       border: 1px solid $color-gray-dark;
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .textarea {
+    &__field {
+      margin-top: 70px;
     }
   }
 }

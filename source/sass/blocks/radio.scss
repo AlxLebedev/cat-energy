@@ -1,4 +1,5 @@
 @import "../variables/colors.scss";
+@import "../variables/breakpoint.scss";
 
 .radio {
   &__input {
@@ -39,6 +40,20 @@
       border: 8px solid $color-white;
       border-radius: 50%;
       box-shadow: 0 0 0 1px $color-gray-middle;
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .radio {
+    &__text {
+      margin-left: 60px;
+
+      &::before {
+        width: 38px;
+        height: 38px;
+        border: 10px solid $color-white;
+      }
     }
   }
 }
