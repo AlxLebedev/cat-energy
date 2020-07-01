@@ -1,6 +1,7 @@
 @import "../variables/colors.scss";
 @import "../mixins/resets/reset-styles-button.scss";
 @import "../mixins/resets/reset-styles-list.scss";
+@import "../variables/breakpoint.scss";
 
 .slider {
   &__wrapper {
@@ -17,6 +18,8 @@
   }
 
   &__item {
+    display: flex;
+    justify-content: center;
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -88,6 +91,54 @@
 
     &--position-after {
       left: calc(100% - 40px);
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .slider {
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__list {
+      min-height: 638px;
+    }
+
+    &__item {
+      width: 50%;
+      background-color: transparent;
+      overflow: hidden;
+      visibility: visible;
+      opacity: 1;
+
+      &--before {
+        left: 0;
+        background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 175px);
+      }
+
+      &--after {
+        right: 0;
+        background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-middle 175px);
+      }
+    }
+
+    &__image {
+      position: absolute;
+      margin: auto;
+      // width: 100vw;
+
+      &--before {
+        left: 0;
+        width: 677px;
+        height: 499px;
+      }
+
+      &--after {
+        right: 0;
+        width: 690px;
+        height: 517px;
+      }
     }
   }
 }
