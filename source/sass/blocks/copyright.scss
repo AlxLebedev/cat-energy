@@ -1,0 +1,23 @@
+@import "../variables/font-family.scss";
+@import "../variables/colors.scss";
+@import "../variables/breakpoint.scss";
+
+.copyright {
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: $color-gray-darkest;
+    font-size: 16px;
+    line-height: 16px;
+
+    &:hover > .copyright__image {
+      fill: $color-green-deafault;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

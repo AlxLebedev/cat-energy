@@ -18,22 +18,10 @@
     display: block;
     width: 22px;
     height: 19px;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    &--vk {
-      background-image: url("../img/icon-vk-mobile.svg");
-      background-size: 22px 12px;
+    &:hover .social__image {
+      fill: $color-green-deafault;
     }
 
-    &--instagramm {
-      background-image: url("../img/icon-insta-mobile.svg");
-      background-size: 16px 16px;
-    }
-
-    &--facebook {
-      background-image: url("../img/icon-fb-mobile.svg");
-      background-size: 10px 19px;
-    }
   }
 }
