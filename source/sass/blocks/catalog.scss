@@ -19,14 +19,12 @@
   .catalog {
     &__wrapper {
       border: none;
-      padding: 0 30px;
     }
 
     &__title {
       font-size: 60px;
       line-height: 60px;
-      padding-top: 0;
-      padding-bottom: 82px;
+      padding: 0 30px 82px;
       margin-left: 0;
     }
   }
