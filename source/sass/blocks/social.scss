@@ -21,11 +21,48 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 28px;
 
     &:hover .social__image {
       fill: $color-green-deafault;
     }
+  }
 
+  &__image--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &__image--insta {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__image--fb {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .social {
+    &__image--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &__image--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &__image--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
