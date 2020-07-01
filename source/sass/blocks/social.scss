@@ -1,4 +1,5 @@
 @import "../mixins/resets/reset-styles-list.scss";
+@import "../variables/breakpoint.scss";
 
 .social {
   &__list {
@@ -6,18 +7,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    min-height: 65px;
   }
 
   &__item {
-    width: 22px;
-    height: 19px;
-    margin: 20px 15px;
+    margin-right: 40px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
   }
 
   &__link {
     display: block;
-    width: 22px;
-    height: 19px;
 
     &:hover .social__image {
       fill: $color-green-deafault;
