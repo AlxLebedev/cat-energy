@@ -98,10 +98,15 @@
 @media (min-width: $width-tablet) {
   .slider {
     &__wrapper {
+      display: flex;
+      flex-direction: column;
       width: 100%;
+      background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 175px);
     }
 
     &__list {
+      margin: auto;
+      width: 690px;
       min-height: 638px;
     }
 
@@ -114,34 +119,35 @@
 
       &--before {
         left: 0;
-        background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 175px);
       }
 
       &--after {
         right: 0;
-        background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-middle 175px);
       }
 
       &--active {
         width: 100%;
         z-index: 2;
       }
+
+      &--deactive {
+        visibility: hidden;
+        opacity: 0;
+      }
     }
 
     &__image {
       position: absolute;
       margin: auto;
+      width: 690px;
+      height: 517px;
 
       &--before {
         left: 0;
-        width: 677px;
-        height: 499px;
       }
 
       &--after {
         right: 0;
-        width: 690px;
-        height: 517px;
       }
     }
   }

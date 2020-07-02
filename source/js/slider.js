@@ -12,6 +12,8 @@ sliderButtonBefore.addEventListener('click', () => {
   }
   sliderTumbler.classList.toggle('slider__tumbler--position-after');
   sliderItemAfter.classList.remove('slider__item--active');
+  sliderItemAfter.classList.add('slider__item--deactive');
+  sliderItemBefore.classList.remove('slider__item--deactive');
   sliderItemBefore.classList.add('slider__item--active');
 });
 
@@ -21,5 +23,7 @@ sliderButtonAfter.addEventListener('click', () => {
   }
   sliderTumbler.classList.toggle('slider__tumbler--position-after');
   sliderItemBefore.classList.remove('slider__item--active');
+  sliderItemBefore.classList.add('slider__item--deactive');
+  sliderItemAfter.classList.remove('slider__item--deactive');
   sliderItemAfter.classList.add('slider__item--active');
 })
