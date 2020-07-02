@@ -105,3 +105,21 @@
     }
   }
 }
+
+@media(min-width: $width-desktop) {
+  .navigation {
+    &__link {
+      font-size: 20px;
+      line-height: 20px;
+      padding-bottom: 7px;
+
+      &--color-white {
+        color: $color-white;
+      }
+
+      &--active-white {
+        border-bottom: 3px solid $color-white;
+      }
+    }
+  }
+}

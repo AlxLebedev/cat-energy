@@ -104,3 +104,24 @@
 
   }
 }
+
+@media (min-width: $width-desktop) {
+  .offer {
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $color-white 50%, $color-green-default 50%);
+    background-position: top right;
+    background-size: 50% auto, 100%;
+
+    &__container {
+      padding-top: 222px;
+      min-height: 510px;
+    }
+
+    &__image {
+      top: 170px;
+      left: 450px;
+      width: 552px;
+      height: 499px;
+      z-index: 1;
+    }
+  }
+}

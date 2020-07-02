@@ -42,3 +42,15 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .header {
+    position: absolute;
+    width: $width-desktop;
+    z-index: 2;
+
+    &__wrapper {
+      padding: 60px 110px;
+    }
+  }
+}
