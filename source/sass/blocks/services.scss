@@ -122,7 +122,7 @@
 
       &::before {
         top: 0;
-        left: 360px;
+        left: calc(100% - 240px);
         width: 268px;
         height: 220px;
       }
@@ -161,6 +161,58 @@
         top: 10px;
         left: 120px;
       }
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .services {
+    &__wrapper {
+      margin-top: 80px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      box-sizing: border-box;
+      width: 570px;
+
+      &:nth-child(n + 2) {
+        margin-top: 0;
+      }
+    }
+
+    &__item-title {
+      font-size: 36px;
+      line-height: 36px;
+      padding-left: 160px;
+
+      &::before {
+        top: -35px;
+        left: 0;
+        width: 134px;
+        height: 107px;
+      }
+
+      &--programm-slimming::before {
+        background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-default 49px, transparent 50px);
+        background-size: 70px 97px, 100%;
+        background-position: bottom 12px center, center;
+      }
+
+      &--programm-pro::before {
+        background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 49px, transparent 50px);
+        background-size: 134px 56px, 100%;
+        background-position: center, center;
+      }
+    }
+
+    &__item-description {
+      width: auto;
+      padding: 75px 0 30px;
     }
   }
 }
