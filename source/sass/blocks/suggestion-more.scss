@@ -57,10 +57,12 @@
 
 @media (min-width: $width-tablet) {
   .suggestion-more {
+    box-sizing: border-box;
     border: 1px solid $color-gray-default;
     margin-top: 70px;
     padding: 55px 37px 36px;
     background-image: none;
+    max-width: 324px;
 
     &::before {
       width: 60px;

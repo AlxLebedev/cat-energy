@@ -8,7 +8,7 @@
 .product {
   &__container {
     display: flex;
-    max-width: 280px;
+    // max-width: 280px;
     margin: auto;
   }
 
@@ -46,6 +46,7 @@
 
   &__order-button {
     @include reset-styles-button;
+    margin: 0;
 
     &:hover {
       background-color: $color-green-dark;
@@ -61,7 +62,7 @@
   .product {
     &__container {
       flex-direction: column;
-      max-width: 248px;
+      // max-width: 248px;
     }
 
     &__img-box {
@@ -78,6 +79,7 @@
     &__description {
       display: flex;
       flex-direction: column;
+      padding: 0 38px;
     }
 
     &__title {
@@ -99,6 +101,10 @@
     &__properties-group {
       border-bottom: 1px solid $color-gray-havy-dark;
       padding: 10px 0;
+    }
+
+    &__order-button {
+      margin: auto;
     }
   }
 }
