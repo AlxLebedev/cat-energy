@@ -121,12 +121,16 @@
         right: 0;
         background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-middle 175px);
       }
+
+      &--active {
+        width: 100%;
+        z-index: 2;
+      }
     }
 
     &__image {
       position: absolute;
       margin: auto;
-      // width: 100vw;
 
       &--before {
         left: 0;
