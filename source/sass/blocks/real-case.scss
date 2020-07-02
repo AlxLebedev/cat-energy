@@ -172,6 +172,10 @@
 
     &__expenses {
       width: auto;
+
+      &--part-two {
+        margin-left: 50px;
+      }
     }
   }
 }

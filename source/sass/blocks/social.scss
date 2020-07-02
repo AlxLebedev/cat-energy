@@ -30,6 +30,10 @@
     &:hover .social__image {
       fill: $color-green-default;
     }
+
+    &:active .social__image {
+      opacity: 0.6;
+    }
   }
 
   &__image--vk {

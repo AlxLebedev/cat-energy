@@ -173,12 +173,13 @@
 
     &__list {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     &__item {
       box-sizing: border-box;
       width: 570px;
+      padding: 75px 53px 61px;
 
       &:nth-child(n + 2) {
         margin-top: 0;
@@ -192,7 +193,7 @@
 
       &::before {
         top: -35px;
-        left: 0;
+        left: -20px;
         width: 134px;
         height: 107px;
       }
@@ -207,6 +208,10 @@
         background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 49px, transparent 50px);
         background-size: 134px 56px, 100%;
         background-position: center, center;
+      }
+
+      &--programm-pro + .services__item-description {
+        width: 464px;
       }
     }
 

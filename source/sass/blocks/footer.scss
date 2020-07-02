@@ -52,3 +52,11 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .footer {
+    &__contacts {
+      position: relative;
+    }
+  }
+}
