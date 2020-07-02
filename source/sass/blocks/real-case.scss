@@ -139,3 +139,39 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .real-case {
+    display: flex;
+    border: none;
+    background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 101px);
+
+    &__text-content {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__title {
+      margin-bottom: 140px;
+    }
+
+    &__description {
+      margin-right: 210px;
+    }
+
+    &__indicators {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    &__indicator-title {
+      background-color: $color-gray-default;
+    }
+
+    &__expenses {
+      width: auto;
+    }
+  }
+}
