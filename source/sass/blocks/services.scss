@@ -49,13 +49,13 @@
     }
 
     &--programm-slimming::before {
-      background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-default 25px, transparent 26px);
       background-size: 35px 49px, 100%;
       background-position: bottom 12px center, center;
     }
 
     &--programm-pro::before {
-      background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 25px, transparent 26px);
       background-size: 67px 28px, 100%;
       background-position: center, center;
     }
@@ -128,13 +128,13 @@
       }
 
       &--programm-slimming::before {
-        background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 99px, transparent 100px);
+        background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-default 99px, transparent 100px);
         background-size: 140px 194px, 100%;
         background-position: top 0px center, center;
       }
 
       &--programm-pro::before {
-        background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 99px, transparent 100px);
+        background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 99px, transparent 100px);
         background-size: 268px 112px, 100%;
         background-position: center, center;
       }

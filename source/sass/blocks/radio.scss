@@ -21,7 +21,7 @@
     }
 
     &:checked + .radio__text::before {
-      background-color: $color-green-deafault;
+      background-color: $color-green-default;
     }
   }
 
