@@ -44,6 +44,7 @@
     @include reset-styles-button;
     color: $color-gray-darkest;
     background-color: $color-gray-default;
+    max-width: unset;
 
     &:hover {
       background-color: $color-gray-light;
@@ -85,18 +86,6 @@
       line-height: 16px;
       width: 170px;
       margin: 0 auto 85px;
-    }
-
-    &__button {
-      width: 248px;
-    }
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .suggestion-more {
-    &__button {
-      width: 100%;
     }
   }
 }

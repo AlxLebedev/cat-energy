@@ -8,8 +8,7 @@
 .product {
   &__container {
     display: flex;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-evenly;
   }
 
   &__img-box {
@@ -47,6 +46,7 @@
 
   &__order-button {
     @include reset-styles-button;
+    max-width: unset;
 
     &:hover {
       background-color: $color-green-dark;
@@ -103,6 +103,7 @@
 
     &__order-button {
       margin: auto;
+      max-width: 248px;
     }
   }
 }
