@@ -44,3 +44,20 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .form-page {
+    &__wrapper {
+      padding-top: 220px;
+    }
+
+    &__title {
+      padding: 0 110px 100px;
+    }
+
+    &__comment {
+      padding-left: 110px;
+      margin: 0;
+    }
+  }
+}
