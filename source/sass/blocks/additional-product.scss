@@ -61,3 +61,23 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .additional-product {
+    &__order-button {
+      margin: 0;
+    }
+
+    &__title {
+      width: 300px;
+    }
+
+    &__properties {
+      width: 300px;
+    }
+
+    &__order-button {
+      width: 245px;
+    }
+  }
+}
