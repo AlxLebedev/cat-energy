@@ -92,3 +92,11 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .suggestion-more {
+    &__button {
+      width: 100%;
+    }
+  }
+}

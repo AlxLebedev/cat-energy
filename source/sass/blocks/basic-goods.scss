@@ -40,3 +40,17 @@
     }
   }
 }
+
+@media (min-width: $width-desktop) {
+  .basic-goods {
+    &__list {
+      padding: 0 110px;
+      justify-content: space-between;
+    }
+
+    &__item {
+      min-width: unset;
+      width: 245px;
+    }
+  }
+}
