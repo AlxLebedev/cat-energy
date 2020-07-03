@@ -29,6 +29,7 @@
 
   &__order-button {
     @include reset-styles-button;
+    max-width: unset;
 
     &:hover {
       background-color: $color-green-dark;

@@ -46,8 +46,11 @@
   &__item {
     border-top: 1px solid $color-gray-dark;
     padding: 13px 0 17px;
-    max-width: 280px;
     margin: auto;
+
+    &:nth-last-child(1) {
+      border-bottom: 1px solid $color-gray-dark;
+    }
   }
 }
 
