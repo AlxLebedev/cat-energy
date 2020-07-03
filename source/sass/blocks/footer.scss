@@ -55,6 +55,10 @@
 
 @media (min-width: $width-desktop) {
   .footer {
+    &__wrapper {
+      padding: 42px 110px;
+    }
+
     &__contacts {
       position: relative;
     }

@@ -147,8 +147,19 @@
 
 @media (min-width: $width-desktop) {
   .conception {
+    &__wrapper {
+      padding: 60px 110px 0;
+    }
+
     &__list {
+      justify-content: space-between;
       max-width: $width-desktop;
+    }
+
+    &__item {
+      width: 245px;
+      min-height: 245px;
+      padding: 110px 0 0;
     }
   }
 }

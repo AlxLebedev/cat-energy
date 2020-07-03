@@ -169,11 +169,12 @@
   .services {
     &__wrapper {
       margin-top: 80px;
+      padding: 0 110px;
     }
 
     &__list {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
 
     &__item {
