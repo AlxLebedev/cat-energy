@@ -67,7 +67,7 @@
     padding: 22px 20px;
     margin: auto;
 
-    &--border-on {
+    &--type-nutrition-data {
       border-top: 1px solid $color-gray-light;
       border-bottom: 1px solid $color-gray-light;
     }
@@ -81,6 +81,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__button-container {
+    padding: 30px 0;
   }
 
   &__button {
@@ -144,7 +148,7 @@
       padding: 0 70px;
       margin-top: 70px;
 
-      &--border-on {
+      &--type-nutrition-data {
         border: 1px solid $color-gray-light;
         padding: 25px 30px;
         margin: 70px 70px 0;
@@ -171,7 +175,7 @@
 
     &__button-container {
       display: flex;
-      margin-top: 60px;
+      padding: 55px 0;
     }
 
     &__button {
@@ -225,7 +229,7 @@
     }
 
     &__button-container {
-      margin-bottom: 80px;
+      padding: 80px 0;
     }
 
     &__button {
@@ -233,9 +237,5 @@
       max-width: unset;
       margin-right: 80px;
     }
-
-    // &__fieldset-group .form__fieldset:nth-child(1) .form__list {
-    //   padding: 0;
-    // }
   }
 }
