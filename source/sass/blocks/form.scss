@@ -192,9 +192,19 @@
 
 @media (min-width: $width-desktop) {
   .form {
+    &__fieldset {
+      &-textarea {
+        margin-left: 110px;
+      }
+    }
+
     &__fieldset-group {
       display: flex;
       padding: 0 110px;
+    }
+
+    &__fieldset-title {
+      margin-left: 70px;
     }
 
     &__list {
@@ -211,10 +221,12 @@
       &--type-owner-data {
         display: flex;
         justify-content: space-between;
+        padding-left: 110px;
       }
 
       &--type-additional {
         justify-content: space-between;
+        padding-left: 110px;
       }
     }
 
@@ -236,6 +248,7 @@
       width: 570px;
       max-width: unset;
       margin-right: 80px;
+      margin-left: 110px;
     }
   }
 }
