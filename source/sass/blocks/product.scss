@@ -47,7 +47,7 @@
 
   &__order-button {
     @include reset-styles-button;
-    max-width: unset;
+    max-width: 100%;
 
     &:hover {
       background-color: $color-green-dark;
@@ -68,17 +68,12 @@
     &__img-box {
       height: 160px;
       align-items: flex-end;
-      margin-bottom: 50px;
-    }
-
-    &__image {
-      margin: 0 auto;
+      margin: 0 -38px 50px;
     }
 
     &__description {
       display: flex;
       flex-direction: column;
-      padding: 0 38px;
     }
 
     &__title {
@@ -100,19 +95,6 @@
     &__properties-group {
       border-bottom: 1px solid $color-gray-havy-dark;
       padding: 10px 0;
-    }
-
-    &__order-button {
-      margin: auto;
-      max-width: 248px;
-    }
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .product {
-    &__order-button {
-      max-width: 169px;
     }
   }
 }

@@ -28,8 +28,9 @@
     }
 
     &__item {
+      box-sizing: border-box;
       border: none;
-      padding: 0 0 38px;
+      padding: 0 38px 38px;
       margin: 0 10px 100px;
       background-image: linear-gradient(transparent 70px, $color-gray-default 70px);
       background-repeat: no-repeat;
