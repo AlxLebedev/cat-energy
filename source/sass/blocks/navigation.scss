@@ -48,7 +48,8 @@
 
     @media ($tablet) {
       display: flex;
-      margin-top: 0;
+      flex-wrap: wrap;
+      // margin-top: 0;
     }
   }
 
@@ -62,6 +63,7 @@
 
     @media ($tablet) {
       margin-right: 35px;
+      margin-bottom: 25px;
       padding: 0;
       border: none;
 

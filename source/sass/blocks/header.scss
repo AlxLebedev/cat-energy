@@ -40,6 +40,10 @@
     }
   }
 
+  &__navigation {
+    max-width: 75%;
+  }
+
   @media ($desktop) {
     width: 100%;
     z-index: 2;
