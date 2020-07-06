@@ -88,7 +88,7 @@
     @media ($tablet) {
       position: absolute;
       top: 200px;
-      left: 30px;
+      left: calc(50% - 350px);
       width: 709px;
       height: 609px;
       z-index: -1;
