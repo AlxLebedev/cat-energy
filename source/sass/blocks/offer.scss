@@ -106,9 +106,9 @@
 
 @media (min-width: $width-desktop) {
   .offer {
-    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $color-white 50%, $color-green-default 50%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $color-white 50%, $color-rgeen-pre-middle 50%);
     background-position: top right;
-    background-size: 50% auto, 100%;
+    background-size: contain;
 
     &--page-index {
       padding-top: 183px;
