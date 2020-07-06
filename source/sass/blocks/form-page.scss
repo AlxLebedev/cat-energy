@@ -42,42 +42,10 @@
       line-height: 30px;
       padding-left: 70px;
     }
+
     @media ($desktop) {
       padding-left: 110px;
       margin: 0;
     }
   }
 }
-
-// @media (min-width: $width-tablet) {
-//   .form-page {
-//     // &__wrapper {
-//     //   border: none;
-//     // }
-
-//     // &__title {
-//     //   font-size: 60px;
-//     //   line-height: 60px;
-//     //   padding: 0 30px 55px;
-//     // }
-
-//     // &__comment {
-//     //   font-size: 20px;
-//     //   line-height: 30px;
-//     //   padding-left: 70px;
-//     // }
-//   }
-// }
-
-// @media (min-width: $width-desktop) {
-//   .form-page {
-//     &__title {
-//       padding: 0 110px 100px;
-//     }
-
-//     &__comment {
-//       padding-left: 110px;
-//       margin: 0;
-//     }
-//   }
-// }
