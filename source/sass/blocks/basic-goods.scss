@@ -23,7 +23,7 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
       padding: 0 30px;
     }
 
@@ -48,7 +48,7 @@
     }
 
     &__item {
-      margin: 0 0 100px;
+      margin: 0 20px 100px;
       min-width: unset;
       width: 245px;
     }
