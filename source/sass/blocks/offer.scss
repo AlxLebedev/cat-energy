@@ -110,14 +110,17 @@
     background-position: top right;
     background-size: 50% auto, 100%;
 
+    &--page-index {
+      padding-top: 183px;
+    }
+
     &__container {
-      padding-top: 222px;
       min-height: 510px;
     }
 
     &__image {
-      top: 170px;
-      left: 450px;
+      top: 0;
+      left: calc(50% - 276px);
       width: 552px;
       height: 499px;
       z-index: 1;

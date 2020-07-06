@@ -45,9 +45,12 @@
 
 @media (min-width: $width-desktop) {
   .header {
-    position: absolute;
     width: $width-desktop;
     z-index: 2;
+
+    &--page-index {
+      position: absolute;
+    }
 
     &__wrapper {
       padding: 60px 110px;
