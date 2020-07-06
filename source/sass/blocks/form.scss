@@ -93,6 +93,10 @@
   &__fieldset-textarea {
     padding: 0 20px;
 
+    @media ($tablet) {
+      padding: 0 70px;
+    }
+
     @media ($desktop) {
       padding: 0 110px;
     }
