@@ -8,15 +8,43 @@
 .conception {
   &__wrapper {
     padding: 32px 20px 47px;
+
+    @media ($tablet) {
+      padding: 45px 30px 0;
+      margin: auto;
+    }
+
+    @media ($desktop) {
+      padding: 60px 110px 0;
+    }
   }
 
   &__title {
     @include reset-styles-heading;
     margin-bottom: 33px;
+
+    @media ($tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 71px;
+    }
   }
 
   &__list {
     @include reset-styles-list;
+
+    @media ($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 970px;
+      margin: auto;
+    }
+
+    @media ($desktop) {
+      justify-content: space-between;
+      max-width: $width-desktop;
+    }
   }
 
   &__item {
@@ -71,31 +99,8 @@
         background-image: url("../img/advantage-clock@2x.png");
       }
     }
-  }
-}
 
-@media (min-width: $width-tablet) {
-  .conception {
-    &__wrapper {
-      padding: 45px 30px 0;
-      margin: auto;
-    }
-
-    &__title {
-      font-size: 60px;
-      line-height: 60px;
-      margin-bottom: 71px;
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      max-width: 970px;
-      margin: auto;
-    }
-
-    &__item {
+    @media ($tablet) {
       box-sizing: border-box;
       position: relative;
       width: 325px;
@@ -142,21 +147,8 @@
         content: "4";
       }
     }
-  }
-}
 
-@media (min-width: $width-desktop) {
-  .conception {
-    &__wrapper {
-      padding: 60px 110px 0;
-    }
-
-    &__list {
-      justify-content: space-between;
-      max-width: $width-desktop;
-    }
-
-    &__item {
+    @media ($desktop) {
       width: 245px;
       min-height: 245px;
       padding: 110px 0 0;

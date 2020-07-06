@@ -10,24 +10,25 @@
 
   &__list {
     @include reset-styles-list;
-  }
 
-  &__item {
-    border-top: 1px solid $color-gray-middle;
-    padding: 0 20px 25px;
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .basic-goods {
-    &__list {
+    @media ($tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 0 30px;
     }
 
-    &__item {
+    @media ($desktop) {
+      padding: 0 110px;
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid $color-gray-middle;
+    padding: 0 20px 25px;
+
+    @media ($tablet) {
       box-sizing: border-box;
       border: none;
       padding: 0 38px 38px;
@@ -37,19 +38,10 @@
       background-position: top;
       min-width: 324px;
     }
-  }
-}
 
-@media (min-width: $width-desktop) {
-  .basic-goods {
-    &__list {
-      padding: 0 110px;
-      justify-content: space-around;
-    }
-
-    &__item {
+    @media ($desktop) {
       margin: 0 20px 100px;
-      min-width: unset;
+      min-width: auto;
       width: 245px;
     }
   }

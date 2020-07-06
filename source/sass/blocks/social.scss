@@ -39,32 +39,28 @@
   &__image--vk {
     width: 22px;
     height: 12px;
+
+    @media ($tablet) {
+      width: 30px;
+      height: 16px;
+    }
   }
 
   &__image--insta {
     width: 16px;
     height: 16px;
+
+    @media ($tablet) {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   &__image--fb {
     width: 10px;
     height: 19px;
-  }
-}
 
-@media (min-width: $width-tablet) {
-  .social {
-    &__image--vk {
-      width: 30px;
-      height: 16px;
-    }
-
-    &__image--insta {
-      width: 23px;
-      height: 23px;
-    }
-
-    &__image--fb {
+    @media ($tablet) {
       width: 14px;
       height: 28px;
     }

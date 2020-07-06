@@ -7,18 +7,64 @@
 .real-case {
   background-color: $color-gray-default;
 
+  @media ($tablet) {
+    background-color: transparent;
+    border-top: 1px solid $color-gray-light;
+  }
+
+  @media ($desktop) {
+    display: flex;
+    border: none;
+    background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 101px);
+  }
+
   &__text-content {
     padding: 16px 20px;
+
+    @media ($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: last baseline;
+      padding: 42px 30px 80px;
+    }
+
+    @media ($desktop) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-left: 110px;
+    }
   }
 
   &__title {
     @include reset-styles-heading;
     margin-bottom: 33px;
     width: 100%;
+
+    @media ($tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 65px;
+    }
+
+    @media ($desktop) {
+      margin-bottom: 140px;
+    }
   }
 
   &__description {
     margin: 0 45px 0 0;
+
+    @media ($tablet) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media ($desktop) {
+      margin-right: 210px;
+    }
   }
 
   &__indicators {
@@ -27,6 +73,16 @@
     justify-content: space-around;
     margin-top: 27px;
     margin-bottom: 38px;
+
+    @media ($tablet) {
+      margin: 53px 0 0;
+      justify-content: initial;
+    }
+
+    @media ($desktop) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
   }
 
   &__indicators-group {
@@ -37,6 +93,15 @@
     height: 56px;
     border: 1px solid $color-gray-dark;
     border-radius: 5px;
+
+    @media ($tablet) {
+      width: 162px;
+      height: 72px;
+
+      &:nth-child(n + 2) {
+        margin-left: 40px;
+      }
+    }
   }
 
   &__indicator-title {
@@ -51,65 +116,8 @@
     text-align: center;
     padding: 3px 16px;
     background-color: $color-gray-default;
-  }
 
-  &__indicator-value {
-    font-family: $font-oswald;
-    color: $color-black;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin: auto;
-  }
-
-  &__expenses {
-    font-family: $font-oswald;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 38px;
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .real-case {
-    background-color: transparent;
-    border-top: 1px solid $color-gray-light;
-
-    &__text-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: last baseline;
-      padding: 42px 30px 80px;
-    }
-
-    &__title {
-      font-size: 60px;
-      line-height: 60px;
-      margin-bottom: 65px;
-    }
-
-    &__description {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    &__indicators {
-      margin: 53px 0 0;
-      justify-content: initial;
-    }
-
-    &__indicators-group {
-      width: 162px;
-      height: 72px;
-
-      &:nth-child(n + 2) {
-        margin-left: 40px;
-      }
-    }
-
-    &__indicator-title {
+    @media ($tablet) {
       font-size: 14px;
       line-height: 14px;
       top: 65px;
@@ -123,12 +131,33 @@
       }
     }
 
-    &__indicator-value {
+    @media ($desktop) {
+      background-color: $color-gray-default;
+    }
+  }
+
+  &__indicator-value {
+    font-family: $font-oswald;
+    color: $color-black;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: auto;
+
+    @media ($tablet) {
       font-size: 30px;
       line-height: 30px;
     }
+  }
 
-    &__expenses {
+  &__expenses {
+    font-family: $font-oswald;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 38px;
+
+    @media ($tablet) {
       margin: 0;
       font-size: 20px;
       line-height: 30px;
@@ -136,41 +165,8 @@
       width: 200px;
       text-align: right;
     }
-  }
-}
 
-@media (min-width: $width-desktop) {
-  .real-case {
-    display: flex;
-    border: none;
-    background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 101px);
-
-    &__text-content {
-      flex-wrap: nowrap;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding-left: 110px;
-    }
-
-    &__title {
-      margin-bottom: 140px;
-    }
-
-    &__description {
-      margin-right: 210px;
-    }
-
-    &__indicators {
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    &__indicator-title {
-      background-color: $color-gray-default;
-    }
-
-    &__expenses {
+    @media ($desktop) {
       width: auto;
 
       &--part-two {

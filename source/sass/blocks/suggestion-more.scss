@@ -21,43 +21,7 @@
     opacity: 0.2;
   }
 
-  &__title {
-    @include reset-styles-heading;
-    color: $color-black;
-    font-family: $font-oswald;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  &__slogan {
-    font-size: 12px;
-    line-height: 16px;
-    margin-top: 11px;
-    margin-bottom: 22px;
-    text-align: center;
-  }
-
-  &__button {
-    @include reset-styles-button;
-    color: $color-gray-darkest;
-    background-color: $color-gray-default;
-    max-width: unset;
-
-    &:hover {
-      background-color: $color-gray-light;
-    }
-
-    &:active {
-      color: $color-gray-havy-dark;
-    }
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .suggestion-more {
+  @media ($tablet) {
     box-sizing: border-box;
     border: 1px solid $color-gray-default;
     margin-top: 70px;
@@ -73,19 +37,53 @@
       background-image: url("../img/icon-plus.svg");
       background-size: 60px 60px;
     }
+  }
 
-    &__title {
+  &__title {
+    @include reset-styles-heading;
+    color: $color-black;
+    font-family: $font-oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+
+    @media ($tablet) {
       font-size: 20px;
       line-height: 20px;
       width: 170px;
       margin: 110px auto 30px;
     }
+  }
 
-    &__slogan {
+  &__slogan {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 11px;
+    margin-bottom: 22px;
+    text-align: center;
+
+    @media ($tablet) {
       font-size: 16px;
       line-height: 16px;
       width: 170px;
       margin: 0 auto 85px;
+    }
+  }
+
+  &__button {
+    @include reset-styles-button;
+    color: $color-gray-darkest;
+    background-color: $color-gray-default;
+    max-width: unset;
+
+    &:hover {
+      background-color: $color-gray-light;
+    }
+
+    &:active {
+      color: $color-gray-havy-dark;
     }
   }
 }

@@ -24,12 +24,8 @@
     &:hover {
       border: 1px solid $color-gray-dark;
     }
-  }
-}
 
-@media (min-width: $width-tablet) {
-  .textarea {
-    &__field {
+    @media ($tablet) {
       margin-top: 70px;
     }
   }

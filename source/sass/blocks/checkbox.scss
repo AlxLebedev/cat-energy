@@ -1,50 +1,48 @@
 @import "../variables/colors.scss";
 @import "../variables/breakpoint.scss";
 
-.checkbox__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-
-  &:not(:disabled):not(:checked) + .checkbox__text:hover::before {
-    border: 1px solid $color-gray-dark;
-  }
-
-  &:not(:disabled):active + .checkbox__text {
-    opacity: 0.6;
-  }
-
-  &:not(:disabled):active + .checkbox__text::before {
-    opacity: 0.6;
-  }
-
-  &:checked + .checkbox__text::before {
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
-  }
-}
-
-.checkbox__text {
-  margin-left: 40px;
-
-  &::before {
+.checkbox {
+  &__input {
     position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
-    background-color: $color-white;
-    border: 1px solid $color-gray-middle;
-  }
-}
+    z-index: -1;
+    opacity: 0;
 
-@media (min-width: $width-tablet) {
-  .checkbox {
-    &__text {
+    &:not(:disabled):not(:checked) + .checkbox__text:hover::before {
+      border: 1px solid $color-gray-dark;
+    }
+
+    &:not(:disabled):active + .checkbox__text {
+      opacity: 0.6;
+    }
+
+    &:not(:disabled):active + .checkbox__text::before {
+      opacity: 0.6;
+    }
+
+    &:checked + .checkbox__text::before {
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 20px;
+    }
+  }
+
+  &__text {
+    margin-left: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      background-color: $color-white;
+      border: 1px solid $color-gray-middle;
+    }
+
+    @media ($tablet) {
       margin-left: 60px;
 
       &::before {

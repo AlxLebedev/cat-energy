@@ -16,12 +16,8 @@
       background-repeat: no-repeat;
       background-position: center;
     }
-  }
-}
 
-@media (min-width: $width-tablet) {
-  .header {
-    &__wrapper {
+    @media ($tablet) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -31,8 +27,10 @@
         display: none;
       }
     }
+  }
 
-    &__logo-image {
+  &__logo-image {
+    @media ($tablet) {
       width: 173px;
       height: 58px;
 
@@ -41,10 +39,8 @@
       }
     }
   }
-}
 
-@media (min-width: $width-desktop) {
-  .header {
+  @media ($desktop) {
     width: 100%;
     z-index: 2;
 

@@ -6,27 +6,6 @@
   display: flex;
   align-items: center;
 
-  &__icon {
-    position: absolute;
-    left: calc(100% - 25px);
-
-    &--invalid {
-      fill: $color-red-error;
-    }
-
-    &--valid {
-      fill: $color-green-default;
-    }
-
-    &--type-email {
-      top: calc(50% - 7px);
-    }
-
-    &--type-tel {
-      top: calc(50% - 10px);
-    }
-  }
-
   &__field {
     font: inherit;
     text-transform: uppercase;
@@ -62,11 +41,25 @@
   & > .input-keyboard__field--invalid {
     border-color: $color-red-error;
   }
-}
 
-// @media (min-width: $width-tablet) {
-//   .input-keyboard {
-//     font-size: 20px;
-//     line-height: 20px;
-//   }
-// }
+  &__icon {
+    position: absolute;
+    left: calc(100% - 25px);
+
+    &--invalid {
+      fill: $color-red-error;
+    }
+
+    &--valid {
+      fill: $color-green-default;
+    }
+
+    &--type-email {
+      top: calc(50% - 7px);
+    }
+
+    &--type-tel {
+      top: calc(50% - 10px);
+    }
+  }
+}

@@ -5,33 +5,25 @@
 .catalog {
   &__wrapper {
     border-top: 1px solid $color-gray-middle;
+
+    @media ($tablet) {
+      border: none;
+    }
   }
 
   &__title {
     @include reset-styles-heading;
     padding: 22px 0;
     margin-left: 22px;
-  }
-}
 
-@media (min-width: $width-tablet) {
-  .catalog {
-    &__wrapper {
-      border: none;
-    }
-
-    &__title {
+    @media ($tablet) {
       font-size: 60px;
       line-height: 60px;
       padding: 0 30px 110px;
       margin-left: 0;
     }
-  }
-}
 
-@media (min-width: $width-desktop) {
-  .catalog {
-    &__title {
+    @media ($desktop) {
       padding: 0 110px 150px;
     }
   }

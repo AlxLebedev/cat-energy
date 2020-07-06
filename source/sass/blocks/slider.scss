@@ -8,6 +8,13 @@
     width: 311px;
     margin: auto;
     padding-bottom: 35px;
+
+    @media ($tablet) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 175px);
+    }
   }
 
   &__list {
@@ -15,6 +22,12 @@
     position: relative;
     min-height: 240px;
     overflow: hidden;
+
+    @media ($tablet) {
+      margin: auto;
+      width: 690px;
+      min-height: 550px;
+    }
   }
 
   &__item {
@@ -37,80 +50,8 @@
       visibility: visible;
       opacity: 1;
     }
-  }
 
-  &__controls {
-    display: flex;
-    width: 200px;
-    margin: 33px auto 0 auto;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__button {
-    @include reset-styles-button;
-    padding: 0;
-    border-bottom: 1px dashed $color-gray-dark;
-    font-size: 14px;
-    line-height: 18px;
-    color: $color-gray-darkest;
-    width: 43px;
-    background-color: transparent;
-    margin: 0;
-
-    &:hover {
-      border-bottom: 1px solid $color-gray-havy-dark;
-    }
-
-    &:active {
-      border-bottom: 1px solid $color-gray-default;
-    }
-  }
-
-  &__tumbler-container {
-    position: relative;
-    box-sizing: border-box;
-    width: 85px;
-    height: 14px;
-    border: 1px solid $color-gray-dark;
-    border-radius: 6px;
-    background-color: $color-white;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  &__tumbler {
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    width: 35px;
-    height: 6px;
-    border-radius: 5px;
-    background-color: $color-green-default;
-    transition: left 1s, transform 1s;
-
-    &--position-after {
-      left: calc(100% - 40px);
-    }
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .slider {
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background-image: linear-gradient(to bottom, $color-white 175px, $color-gray-default 175px);
-    }
-
-    &__list {
-      margin: auto;
-      width: 690px;
-      min-height: 550px;
-    }
-
-    &__item {
+    @media ($tablet) {
       width: 50%;
       background-color: transparent;
       overflow: hidden;
@@ -134,8 +75,10 @@
         width: 0;
       }
     }
+  }
 
-    &__image {
+  &__image {
+    @media ($tablet) {
       position: absolute;
       margin: auto;
       width: 690px;
@@ -149,26 +92,81 @@
         right: 0;
       }
     }
+  }
 
-    &__controls {
+  &__controls {
+    display: flex;
+    width: 200px;
+    margin: 33px auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+    @media ($tablet) {
       width: 500px;
     }
+  }
 
-    &__button {
+  &__button {
+    @include reset-styles-button;
+    padding: 0;
+    border-bottom: 1px dashed $color-gray-dark;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-gray-darkest;
+    width: 43px;
+    background-color: transparent;
+    margin: 0;
+
+    &:hover {
+      border-bottom: 1px solid $color-gray-havy-dark;
+    }
+
+    &:active {
+      border-bottom: 1px solid $color-gray-default;
+    }
+
+    @media ($tablet) {
       font-size: 18px;
       line-height: 18px;
       width: 60px;
       padding-bottom: 3px;
     }
+  }
 
-    &__tumbler-container {
+  &__tumbler-container {
+    position: relative;
+    box-sizing: border-box;
+    width: 85px;
+    height: 14px;
+    border: 1px solid $color-gray-dark;
+    border-radius: 6px;
+    background-color: $color-white;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @media ($tablet) {
       width: 300px;
       height: 3px;
       border: none;
       background-color: $color-gray-middle;
     }
+  }
 
-    &__tumbler {
+  &__tumbler {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: $color-green-default;
+    transition: left 1s, transform 1s;
+
+    &--position-after {
+      left: calc(100% - 40px);
+    }
+
+    @media ($tablet) {
       width: 8px;
       height: 8px;
       top: -8px;
