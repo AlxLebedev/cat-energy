@@ -49,6 +49,7 @@
   }
 
   &__item {
+    display: flex;
     margin-bottom: 32px;
     min-height: 60px;
 
@@ -57,8 +58,7 @@
     }
 
     &::before {
-      display: inline-flex;
-      float: left;
+      display: block;
       margin-right: 20px;
       content: "";
       width: 60px;
@@ -67,6 +67,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 50px 50px;
+      flex-shrink: 0;
     }
 
     &--type-eco::before {
@@ -102,22 +103,24 @@
     }
 
     @media ($tablet) {
+      flex-direction: column;
       box-sizing: border-box;
       position: relative;
       width: 325px;
       min-height: 230px;
       margin-bottom: 80px;
-      padding-top: 110px;
+      // padding-top: 110px;
       padding-right: 80px;
       font-size: 16px;
       line-height: 24px;
 
       &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
         width: 80px;
         height: 80px;
+        margin-bottom: 40px;
       }
 
       &::after {
@@ -137,7 +140,7 @@
     @media ($desktop) {
       width: 245px;
       min-height: 245px;
-      padding: 110px 0 0;
+      padding: 0;
     }
   }
 }
