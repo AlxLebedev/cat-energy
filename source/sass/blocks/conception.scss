@@ -39,6 +39,7 @@
       justify-content: space-around;
       max-width: 970px;
       margin: auto;
+      counter-reset: item;
     }
 
     @media ($desktop) {
@@ -121,7 +122,8 @@
 
       &::after {
         position: absolute;
-        content: "";
+        counter-increment: item;
+        content: counter(item);
         top: -40px;
         left: 115px;
         font-family: $font-oswald;
@@ -129,22 +131,6 @@
         line-height: 280px;
         color: $color-gray-default;
         z-index: -1;
-      }
-
-      &--type-eco::after {
-        content: "1";
-      }
-
-      &--type-powder::after {
-        content: "2";
-      }
-
-      &--type-dining::after {
-        content: "3";
-      }
-
-      &--type-time::after {
-        content: "4";
       }
     }
 
