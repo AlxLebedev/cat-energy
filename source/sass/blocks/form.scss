@@ -64,6 +64,7 @@
 
   &__list {
     @include reset-styles-list;
+    box-sizing: border-box;
     padding: 22px 20px;
     margin: auto;
 
@@ -201,6 +202,7 @@
     &__fieldset-group {
       display: flex;
       padding: 0 110px;
+      justify-content: space-between;
     }
 
     &__fieldset-title {
@@ -216,17 +218,18 @@
       &--type-nutrition-data {
         width: 570px;
         padding: 38px 30px;
+        margin: 70px 0 0;
       }
 
       &--type-owner-data {
         display: flex;
         justify-content: space-between;
-        padding-left: 110px;
+        padding: 0 110px;
       }
 
       &--type-additional {
         justify-content: space-between;
-        padding-left: 110px;
+        padding: 0 110px;
       }
     }
 

@@ -105,11 +105,12 @@
     &__content {
       display: flex;
       padding: 0 110px 85px;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     &__list {
       padding: 0;
+      margin-right: 50px;
     }
 
     &__item {
