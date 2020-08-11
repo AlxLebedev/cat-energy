@@ -1,12 +1,39 @@
-@import "./variables/colors.scss";
+@import "../variables/colors.scss";
+@import "../variables/breakpoint.scss";
 
 .footer {
+  &__contacts {
+    @media ($desktop) {
+      position: relative;
+    }
+  }
+
   &__wrapper {
     padding: 38px 20px 22px;
+    background-color: $color-gray-default;
+
+    @media ($tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 70px;
+    }
+
+    @media ($desktop) {
+      padding: 42px 110px;
+    }
   }
 
   &__logo {
     display: flex;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   &__logo-link {
@@ -20,13 +47,16 @@
     border-bottom: 1px solid $color-gray-middle;
     margin-top: 30px;
     margin-bottom: 25px;
+
+    @media ($tablet) {
+      border: none;
+      margin: 0;
+    }
   }
 
   &__copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    line-height: 16px;
+    @media ($tablet) {
+      min-width: 165px;
+    }
   }
 }

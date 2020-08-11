@@ -1,13 +1,13 @@
-@import "./variables/colors.scss";
-@import "./variables/pixel-density.scss";
+@import "../variables/colors.scss";
+@import "../variables/pixel-density.scss";
+@import "../variables/breakpoint.scss";
 
 .promo {
   position: relative;
   box-sizing: border-box;
   width: 280px;
   margin: auto;
-  padding-top: 39px;
-  border-top: 1px solid $color-gray-middle;
+  padding: 40px 0;
 
   &::before {
     position: absolute;
@@ -22,6 +22,30 @@
     background-size: 55px 60px;
   }
 
+  @media ($tablet) {
+    width: 100%;
+    max-width: 768px;
+    padding: 40px 30px;
+
+    &::before {
+      top: calc(50% - 30px);
+      left: 90px;
+    }
+  }
+
+  @media ($desktop) {
+    width: 245px;
+    max-width: unset;
+    min-height: 289px;
+    padding: 0;
+    margin: 0;
+
+    &::before {
+      top: 60px;
+      left: calc(50% - 25px);
+    }
+  }
+
   &__wrapper {
     padding: 190px 35px 40px;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -32,6 +56,24 @@
     @media #{$media-retina} {
       background-image: url("../img/gift-photo-mobile@2x.jpg");
     }
+
+    @media ($tablet) {
+      padding: 70px 35px;
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+      @media #{$media-retina} {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+      }
+    }
+
+    @media ($desktop) {
+      padding: 190px 35px 40px;
+      background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+      @media #{$media-retina} {
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
+      }
+    }
   }
 
   &__content {
@@ -39,7 +81,18 @@
     margin: auto;
     color: $color-white;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.2;
     text-align: center;
+
+    @media ($tablet) {
+      text-align: left;
+      margin-left: 390px;
+    }
+
+    @media ($desktop) {
+      text-align: center;
+      width: auto;
+      margin: 0;
+    }
   }
 }

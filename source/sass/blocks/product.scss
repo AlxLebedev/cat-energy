@@ -1,50 +1,89 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./mixins/resets/reset-styles-button.scss";
-@import "./mixins/resets/reset-styles-list.scss";
-@import "./mixins/resets/reset-styles-heading.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../mixins/resets/reset-styles-button.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .product {
   &__container {
     display: flex;
-    max-width: 280px;
-    margin: auto;
+    justify-content: space-around;
+
+    @media ($tablet) {
+      flex-direction: column;
+    }
   }
 
   &__img-box {
     display: flex;
+
+    @media ($tablet) {
+      height: 160px;
+      align-items: flex-end;
+      margin: 0 -38px 50px;
+    }
   }
 
   &__image {
     margin: auto;
+    width: 100%;
+  }
+
+  &__description {
+    @media ($tablet) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
     @include reset-styles-heading;
     color: $color-black;
     font-family: $font-oswald;
+    font-weight: 200;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.2;
     text-transform: uppercase;
     margin-top: 20px;
     width: 100px;
+
+    @media ($tablet) {
+      font-size: 20px;
+      font-weight: 200;
+      text-align: center;
+      width: 140px;
+      margin: auto;
+    }
   }
 
   &__properties {
     @include reset-styles-list;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.3;
     width: 141px;
     margin: 15px 0;
+
+    @media ($tablet) {
+      font-size: 16px;
+      width: 100%;
+      margin: 25px auto 35px;
+    }
   }
 
   &__properties-group {
     display: flex;
     justify-content: space-between;
+
+    @media ($tablet) {
+      border-bottom: 1px solid $color-gray-havy-dark;
+      padding: 10px 0;
+    }
   }
 
   &__order-button {
     @include reset-styles-button;
+    max-width: 100%;
 
     &:hover {
       background-color: $color-green-dark;

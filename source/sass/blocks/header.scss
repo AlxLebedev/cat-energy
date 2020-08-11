@@ -1,3 +1,5 @@
+@import "../variables/breakpoint.scss";
+
 .header {
   &__wrapper {
     position: relative;
@@ -13,6 +15,52 @@
       background-image: url("../img/logo-mobile-header.svg");
       background-repeat: no-repeat;
       background-position: center;
+    }
+
+    @media ($tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 23px 30px 60px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__logo-image {
+    @media ($tablet) {
+      width: 173px;
+      height: 58px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__navigation {
+    @media($tablet) {
+      max-width: 75%;
+    }
+  }
+
+  @media ($desktop) {
+    width: 100%;
+    z-index: 2;
+
+    &--page-index {
+      position: absolute;
+    }
+
+    &__wrapper {
+      padding: 60px 110px;
+    }
+
+    &__logo-image {
+      width: 202px;
+      height: 59px;
     }
   }
 }

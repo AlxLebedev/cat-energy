@@ -1,12 +1,22 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./mixins/visually-hidden.scss";
-@import "./mixins/resets/reset-styles-list.scss";
-@import "./mixins/resets/reset-styles-heading.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../mixins/visually-hidden.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../mixins/resets/reset-styles-heading.scss";
+@import "../variables/breakpoint.scss";
 
 .services {
   &__wrapper {
     padding: 0 20px;
+
+    @media ($tablet) {
+      padding: 0 30px;
+    }
+
+    @media ($desktop) {
+      margin-top: 80px;
+      padding: 0 110px;
+    }
   }
 
   &__title {
@@ -15,6 +25,11 @@
 
   &__list {
     @include reset-styles-list;
+
+    @media ($desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -24,6 +39,20 @@
     &:nth-child(n + 2) {
       margin-top: 20px;
     }
+
+    @media ($tablet) {
+      padding: 70px 52px;
+    }
+
+    @media ($desktop) {
+      box-sizing: border-box;
+      width: 570px;
+      padding: 75px 53px 61px;
+
+      &:nth-child(n + 2) {
+        margin-top: 0;
+      }
+    }
   }
 
   &__item-title {
@@ -32,7 +61,6 @@
     font-family: $font-oswald;
     font-weight: normal;
     font-size: 24px;
-    line-height: 24px;
     padding-left: 80px;
     color: $color-black;
     text-transform: uppercase;
@@ -48,15 +76,63 @@
     }
 
     &--programm-slimming::before {
-      background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-default 25px, transparent 26px);
       background-size: 35px 49px, 100%;
       background-position: bottom 12px center, center;
     }
 
     &--programm-pro::before {
-      background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-deafault 25px, transparent 26px);
+      background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 25px, transparent 26px);
       background-size: 67px 28px, 100%;
       background-position: center, center;
+    }
+
+    @media ($tablet) {
+      font-size: 36px;
+      padding-left: 0;
+
+      &::before {
+        top: 0;
+        left: calc(50% + 50px);
+        width: 268px;
+        height: 220px;
+      }
+
+      &--programm-slimming::before {
+        background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-default 99px, transparent 100px);
+        background-size: 140px 194px, 100%;
+        background-position: top 0 center, center;
+      }
+
+      &--programm-pro::before {
+        background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 99px, transparent 100px);
+        background-size: 268px 112px, 100%;
+        background-position: center, center;
+      }
+    }
+
+    @media ($desktop) {
+      font-size: 36px;
+      padding-left: 160px;
+
+      &::before {
+        top: -35px;
+        left: -20px;
+        width: 134px;
+        height: 107px;
+      }
+
+      &--programm-slimming::before {
+        background-image: url("../img/icon-cat-slim.svg"), radial-gradient(circle, $color-green-default 49px, transparent 50px);
+        background-size: 70px 97px, 100%;
+        background-position: bottom 12px center, center;
+      }
+
+      &--programm-pro::before {
+        background-image: url("../img/icon-cat-pro.svg"), radial-gradient(circle, $color-green-default 49px, transparent 50px);
+        background-size: 134px 56px, 100%;
+        background-position: center, center;
+      }
     }
   }
 
@@ -64,6 +140,20 @@
     margin: 0 0 20px 0;
     padding: 39px 20px 24px 0;
     border-bottom: 1px solid $color-gray-middle;
+
+    @media ($tablet) {
+      border: none;
+      margin: 0;
+      width: 53%;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 25px 0 56px;
+    }
+
+    @media ($desktop) {
+      width: auto;
+      padding: 75px 0 30px;
+    }
   }
 
   &__item-link {
@@ -71,7 +161,6 @@
     font-family: $font-oswald;
     color: $color-black;
     font-size: 16px;
-    line-height: 16px;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -100,6 +189,15 @@
 
     &:active::after {
       opacity: 0.4;
+    }
+
+    @media ($tablet) {
+      font-size: 20px;
+
+      &::after {
+        top: 10px;
+        left: 120px;
+      }
     }
   }
 }

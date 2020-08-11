@@ -1,30 +1,10 @@
-@import "./variables/colors.scss";
+@import "../variables/colors.scss";
+@import "../variables/breakpoint.scss";
 
 .input-keyboard {
   position: relative;
   display: flex;
   align-items: center;
-
-  &__icon {
-    position: absolute;
-    left: calc(100% - 25px);
-
-    &--invalid {
-      fill: $color-red-error;
-    }
-
-    &--valid {
-      fill: $color-green-deafault;
-    }
-
-    &--type-email {
-      top: calc(50% - 7px);
-    }
-
-    &--type-tel {
-      top: calc(50% - 10px);
-    }
-  }
 
   &__field {
     font: inherit;
@@ -34,6 +14,7 @@
     margin-left: 15px;
     border: 1px solid $color-gray-middle;
     padding: 7px 15px;
+    outline: none;
 
     &::placeholder {
       color: $color-gray-darkest;
@@ -60,5 +41,26 @@
 
   & > .input-keyboard__field--invalid {
     border-color: $color-red-error;
+  }
+
+  &__icon {
+    position: absolute;
+    left: calc(100% - 25px);
+
+    &--invalid {
+      fill: $color-red-error;
+    }
+
+    &--valid {
+      fill: $color-green-default;
+    }
+
+    &--type-email {
+      top: calc(50% - 7px);
+    }
+
+    &--type-tel {
+      top: calc(50% - 10px);
+    }
   }
 }

@@ -1,6 +1,7 @@
-@import "./variables/colors.scss";
-@import "./variables/font-family.scss";
-@import "./mixins/resets/reset-styles-list.scss";
+@import "../variables/colors.scss";
+@import "../variables/font-family.scss";
+@import "../mixins/resets/reset-styles-list.scss";
+@import "../variables/breakpoint.scss";
 
 .navigation {
   &__toggle-button {
@@ -21,6 +22,10 @@
     &--close {
       background-image: url("../img/icon-close.svg");
     }
+
+    @media ($tablet) {
+      display: none;
+    }
   }
 
   &__list {
@@ -40,6 +45,11 @@
     &--no-js {
       display: block;
     }
+
+    @media ($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__list-item {
@@ -49,13 +59,57 @@
     &:first-child {
       border-top: 1px solid $color-black;
     }
+
+    @media ($tablet) {
+      margin-right: 35px;
+      margin-bottom: 25px;
+      padding: 0;
+      border: none;
+
+      &:first-child {
+        border: none;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 
   &__link {
     font-family: $font-oswald;
     font-size: 16px;
-    line-height: 16px;
     color: $color-black;
     text-decoration: none;
+
+    @media ($tablet) {
+      font-size: 18px;
+      padding-bottom: 5px;
+
+      &--active {
+        border-bottom: 3px solid $color-green-default;
+      }
+
+      &[href]:hover {
+        opacity: 0.7;
+      }
+
+      &[href]:active {
+        opacity: 0.3;
+      }
+    }
+
+    @media ($desktop) {
+      font-size: 20px;
+      padding-bottom: 7px;
+
+      &--color-white {
+        color: $color-white;
+      }
+
+      &--active-white {
+        border-bottom: 3px solid $color-white;
+      }
+    }
   }
 }
