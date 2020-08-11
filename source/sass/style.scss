@@ -1,14 +1,8 @@
-// global-styles
-
 @import "./global-styles/fonts.scss";
 @import "./global-styles/body-styles.scss";
 
-// blocks
-
 @import "./blocks/button.scss";
 @import "./blocks/heading.scss";
-
-// index
 
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
@@ -22,8 +16,6 @@
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
 
-// catalog
-
 @import "./blocks/catalog.scss";
 @import "./blocks/product.scss";
 @import "./blocks/basic-goods.scss";
@@ -32,14 +24,9 @@
 @import "./blocks/additional-product.scss";
 @import "./blocks/promo.scss";
 
-// form
-
 @import "./blocks/form-page.scss";
 @import "./blocks/form.scss";
 @import "./blocks/input-keyboard.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/textarea.scss";
 @import "./blocks/checkbox.scss";
-// @import "./blocks/cat-data.scss";
-// @import "./blocks/nutrition-data.scss";
-// @import "./blocks/owner-data.scss";

@@ -55,12 +55,10 @@
   &__slogan-title {
     margin: 0;
     font-size: 36px;
-    line-height: 36px;
     font-weight: 400;
 
     @media ($tablet) {
       font-size: 60px;
-      line-height: 60px;
       width: 430px;
     }
   }
@@ -70,12 +68,10 @@
     margin-top: 19px;
     margin-bottom: 29px;
     font-size: 14px;
-    line-height: 14px;
     text-transform: uppercase;
 
     @media ($tablet) {
       font-size: 20px;
-      line-height: 20px;
       margin-top: 40px;
       margin-bottom: 48px;
     }
@@ -119,75 +115,6 @@
       width: 245px;
       height: 55px;
       font-size: 20px;
-      line-height: 20px;
     }
   }
 }
-
-// @media (min-width: $width-tablet) {
-//   .offer {
-//     // color: $color-black;
-//     // text-align: left;
-//     // background-image: none;
-
-//     // &__container {
-//     //   position: relative;
-//     //   min-height: 810px;
-//     //   padding: 0 0 0 114px;
-//     // }
-
-//     // &__slogan-title {
-//     //   font-size: 60px;
-//     //   line-height: 60px;
-//     //   width: 430px;
-//     // }
-
-//     // &__slogan-call-to-action {
-//     //   font-size: 20px;
-//     //   line-height: 20px;
-//     //   margin-top: 40px;
-//     //   margin-bottom: 48px;
-//     // }
-
-//     // &__image {
-//     //   position: absolute;
-//     //   top: 200px;
-//     //   left: 30px;
-//     //   width: 709px;
-//     //   height: 609px;
-//     //   z-index: -1;
-//     // }
-
-//     // &__button {
-//     //   margin: 0;
-//     //   width: 245px;
-//     //   height: 55px;
-//     //   font-size: 20px;
-//     //   line-height: 20px;
-//     // }
-//   }
-// }
-
-// @media (min-width: $width-desktop) {
-//   .offer {
-//     // background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $color-white 50%, $color-rgeen-pre-middle 50%);
-//     // background-position: top right;
-//     // background-size: contain;
-
-//     // &--page-index {
-//     //   padding-top: 183px;
-//     // }
-
-//     // &__container {
-//     //   min-height: 510px;
-//     // }
-
-//     // &__image {
-//     //   top: 0;
-//     //   left: calc(50% - 276px);
-//     //   width: 552px;
-//     //   height: 499px;
-//     //   z-index: 1;
-//     // }
-//   }
-// }

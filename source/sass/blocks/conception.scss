@@ -25,7 +25,6 @@
 
     @media ($tablet) {
       font-size: 60px;
-      line-height: 60px;
       margin-bottom: 71px;
     }
   }
@@ -111,7 +110,7 @@
       margin-bottom: 80px;
       padding-right: 80px;
       font-size: 16px;
-      line-height: 24px;
+      line-height: 1.5;
 
       &::before {
         width: 80px;
@@ -127,7 +126,6 @@
         left: 115px;
         font-family: $font-oswald;
         font-size: 280px;
-        line-height: 280px;
         color: $color-gray-default;
         z-index: -1;
       }

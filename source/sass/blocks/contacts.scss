@@ -33,27 +33,27 @@
     font-family: $font-oswald;
     color: $color-black;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.2;
     text-transform: uppercase;
     width: 140px;
     margin: 0;
 
     @media ($tablet) {
       font-size: 20px;
-      line-height: 25px;
+      line-height: 1.2;
       width: 155px;
     }
   }
 
   &__address {
     font-style: normal;
-    line-height: 20px;
+    line-height: 1.4;
     width: 140px;
 
     @media ($tablet) {
       width: 155px;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 1.2;
       text-align: right;
     }
 

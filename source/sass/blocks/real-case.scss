@@ -45,7 +45,6 @@
 
     @media ($tablet) {
       font-size: 60px;
-      line-height: 60px;
       margin-bottom: 65px;
     }
 
@@ -59,7 +58,7 @@
 
     @media ($tablet) {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 1.5;
     }
 
     @media ($desktop) {
@@ -106,12 +105,11 @@
 
   &__indicator-title {
     position: absolute;
-    top: 47px;
+    top: 45px;
     left: calc(50% - 43px);
     box-sizing: border-box;
     width: 87px;
     font-size: 12px;
-    line-height: 12px;
     margin: auto;
     text-align: center;
     padding: 3px 16px;
@@ -119,8 +117,7 @@
 
     @media ($tablet) {
       font-size: 14px;
-      line-height: 14px;
-      top: 65px;
+      top: 62px;
       left: 25px;
       background-color: $color-white;
       width: auto;
@@ -140,19 +137,17 @@
     font-family: $font-oswald;
     color: $color-black;
     font-size: 24px;
-    line-height: 24px;
     text-transform: uppercase;
     margin: auto;
 
     @media ($tablet) {
       font-size: 30px;
-      line-height: 30px;
     }
   }
 
   &__expenses {
     font-family: $font-oswald;
-    line-height: 20px;
+    line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
     margin-top: 38px;
@@ -160,7 +155,7 @@
     @media ($tablet) {
       margin: 0;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 1.5;
       color: $color-black;
       width: 200px;
       text-align: right;

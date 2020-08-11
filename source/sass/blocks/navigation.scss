@@ -79,13 +79,11 @@
   &__link {
     font-family: $font-oswald;
     font-size: 16px;
-    line-height: 16px;
     color: $color-black;
     text-decoration: none;
 
     @media ($tablet) {
       font-size: 18px;
-      line-height: 18px;
       padding-bottom: 5px;
 
       &--active {
@@ -103,7 +101,6 @@
 
     @media ($desktop) {
       font-size: 20px;
-      line-height: 20px;
       padding-bottom: 7px;
 
       &--color-white {
